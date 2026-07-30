@@ -1,0 +1,44 @@
+{
+  "conversion_failures": 0,
+  "converted_images": 1457,
+  "converted_objects": 18983,
+  "duplicate_groups_crossing_splits": 0,
+  "person_level_separation": "cannot be guaranteed because verified subject IDs are unavailable",
+  "project_class": "acne_lesion",
+  "seed": 42,
+  "source_class": "fore",
+  "source_images": 1457,
+  "source_objects": 18983,
+  "split_targets": {
+    "test": 0.15,
+    "train": 0.7,
+    "val": 0.15
+  },
+  "splits": [
+    {
+      "image_ratio": "0.702128",
+      "images": 1023,
+      "objects": 13448,
+      "split": "train",
+      "target_ratio": "0.700000",
+      "very_small_boxes": 566
+    },
+    {
+      "image_ratio": "0.149623",
+      "images": 218,
+      "objects": 2769,
+      "split": "val",
+      "target_ratio": "0.150000",
+      "very_small_boxes": 131
+    },
+    {
+      "image_ratio": "0.148250",
+      "images": 216,
+      "objects": 2766,
+      "split": "test",
+      "target_ratio": "0.150000",
+      "very_small_boxes": 136
+    }
+  ],
+  "yolo_class_id": 0
+}

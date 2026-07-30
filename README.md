@@ -32,3 +32,36 @@ Place authorised data only on the local machine under `data/raw/`; derived files
 ## Current Status
 
 No dataset has been downloaded, no dependencies have been installed, and no model has been trained. The next manual action is to identify an appropriate dataset and complete `docs/LICENSE_LOG.md` and `docs/DATASET_CARD.md` before placing any authorised data locally.
+
+## Dataset Audit
+
+After local dataset access and governance approval, run the read-only VOC audit with:
+
+```bash
+python src/audit_dataset.py \
+  --dataset-root data/raw/acne04/Detection/VOC2007 \
+  --images-dir data/raw/acne04/Classification/JPEGImages \
+  --output-dir outputs/reports
+```
+
+`--images-dir` is optional; when it is omitted, the audit checks `JPEGImages` inside the VOC root. The audit requires Pillow and writes only JSON and CSV reports beneath the output directory. It does not alter raw data, convert annotations, create splits, or train a model.
+
+## Visual Annotation Review
+
+After a clean audit, generate deterministic, read-only annotation previews with:
+
+```bash
+python src/render_voc_previews.py \
+  --annotations-dir data/raw/acne04/Detection/VOC2007/Annotations \
+  --images-dir data/raw/acne04/Classification/JPEGImages \
+  --audit-json outputs/reports/acne04_dataset_audit.json \
+  --output-dir outputs/previews \
+  --sample-size 120 \
+  --seed 42
+```
+
+The generated previews and CSV worksheets remain local, and support human review before any label conversion or training.
+
+## YOLO Conversion and Validation
+
+After approval of the `fore` to `acne_lesion` research-prototype mapping, use the commands in [CONVERSION_GUIDE.md](docs/CONVERSION_GUIDE.md). Conversion copies local source images into the ignored `data/processed/` directory, creates duplicate-aware deterministic splits, and must be followed by validation. It does not train a model.

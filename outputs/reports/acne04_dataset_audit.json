@@ -1,0 +1,3671 @@
+{
+  "findings": {
+    "corrupt_images": [],
+    "duplicate_images": [
+      {
+        "detail": "Duplicate SHA-256 group: 06b2c41628e227aa15415aba6aac881e47eb6c06d74bb9b0b592664e2a81b4a5.",
+        "path": "../../Classification/JPEGImages/levle0_131.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 06b2c41628e227aa15415aba6aac881e47eb6c06d74bb9b0b592664e2a81b4a5.",
+        "path": "../../Classification/JPEGImages/levle0_24.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 0831ea7a4bc5e0477d5b41eec0553130c4811d8eebb93fc2eb0ce584a7c4a963.",
+        "path": "../../Classification/JPEGImages/levle0_120.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 0831ea7a4bc5e0477d5b41eec0553130c4811d8eebb93fc2eb0ce584a7c4a963.",
+        "path": "../../Classification/JPEGImages/levle1_486.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 188f8fbae3b30080927c37f44890906e211578ec177ea2a3b021a166b252b09a.",
+        "path": "../../Classification/JPEGImages/levle1_23.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 188f8fbae3b30080927c37f44890906e211578ec177ea2a3b021a166b252b09a.",
+        "path": "../../Classification/JPEGImages/levle2_153.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 2666ed0601e6579477889e5671972520bf5bd766ed6ac383d51c44107f46606a.",
+        "path": "../../Classification/JPEGImages/levle1_572.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 2666ed0601e6579477889e5671972520bf5bd766ed6ac383d51c44107f46606a.",
+        "path": "../../Classification/JPEGImages/levle1_574.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 2ccdae05d565fc9ef819d95265797441846727b73804094323902594a9ceadd2.",
+        "path": "../../Classification/JPEGImages/levle0_42.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 2ccdae05d565fc9ef819d95265797441846727b73804094323902594a9ceadd2.",
+        "path": "../../Classification/JPEGImages/levle0_94.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 3fcb0f1627c6ad98df131b8f9c7ae10e9ba5d0e9599cf525ec54ce072ebcbfe5.",
+        "path": "../../Classification/JPEGImages/levle1_20.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 3fcb0f1627c6ad98df131b8f9c7ae10e9ba5d0e9599cf525ec54ce072ebcbfe5.",
+        "path": "../../Classification/JPEGImages/levle2_151.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 46417b44b16e0aac18cf592947a2d6e2f6f4ea48bd5b1bf6c8b4893c0fab7533.",
+        "path": "../../Classification/JPEGImages/levle2_70.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 46417b44b16e0aac18cf592947a2d6e2f6f4ea48bd5b1bf6c8b4893c0fab7533.",
+        "path": "../../Classification/JPEGImages/levle2_96.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 4cb2a60071e6d4a135c853b3785580895374341a900eddb38114d42677bf9218.",
+        "path": "../../Classification/JPEGImages/levle0_119.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 4cb2a60071e6d4a135c853b3785580895374341a900eddb38114d42677bf9218.",
+        "path": "../../Classification/JPEGImages/levle0_123.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 56f232f4433dd59a75104e2370b6d2367444046a071b10cee66b1da17bf7862e.",
+        "path": "../../Classification/JPEGImages/levle1_145.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 56f232f4433dd59a75104e2370b6d2367444046a071b10cee66b1da17bf7862e.",
+        "path": "../../Classification/JPEGImages/levle1_281.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 59ae260f2e1fe25b80854c3323ed85976d61d530b60d60b76ddfa7be53489e67.",
+        "path": "../../Classification/JPEGImages/levle0_118.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 59ae260f2e1fe25b80854c3323ed85976d61d530b60d60b76ddfa7be53489e67.",
+        "path": "../../Classification/JPEGImages/levle0_265.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 5a71adc2b690cdedde439890ed1ae950c16f1cc58cef93b90b37781256dbce1b.",
+        "path": "../../Classification/JPEGImages/levle0_206.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 5a71adc2b690cdedde439890ed1ae950c16f1cc58cef93b90b37781256dbce1b.",
+        "path": "../../Classification/JPEGImages/levle0_95.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 5b605bc92fcd022a9193bbdf5c9e0ac18bce8da4e29df9a6731b1bb46dcd1eea.",
+        "path": "../../Classification/JPEGImages/levle1_16.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 5b605bc92fcd022a9193bbdf5c9e0ac18bce8da4e29df9a6731b1bb46dcd1eea.",
+        "path": "../../Classification/JPEGImages/levle2_150.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 611532acc5ec2bf348ef5c4188532e15c8de490178c8b33cdc8fc972d2fb64d3.",
+        "path": "../../Classification/JPEGImages/levle1_136.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 611532acc5ec2bf348ef5c4188532e15c8de490178c8b33cdc8fc972d2fb64d3.",
+        "path": "../../Classification/JPEGImages/levle1_54.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 6bbc2d30d4bb10853d24f732a29fe7cba57df0628ce087cc02a9b3ddce8dc485.",
+        "path": "../../Classification/JPEGImages/levle1_573.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 6bbc2d30d4bb10853d24f732a29fe7cba57df0628ce087cc02a9b3ddce8dc485.",
+        "path": "../../Classification/JPEGImages/levle1_575.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 6dab728e8bfca66d940a03e8f880b31598ca6b0fa8d16bca7b766a03953e0fa4.",
+        "path": "../../Classification/JPEGImages/levle1_135.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 6dab728e8bfca66d940a03e8f880b31598ca6b0fa8d16bca7b766a03953e0fa4.",
+        "path": "../../Classification/JPEGImages/levle1_209.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 7c2e546505d3172355ddd7fde7e1ba48553c87a5942ab60537a3c0416237b8f1.",
+        "path": "../../Classification/JPEGImages/levle0_132.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 7c2e546505d3172355ddd7fde7e1ba48553c87a5942ab60537a3c0416237b8f1.",
+        "path": "../../Classification/JPEGImages/levle0_133.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 828240b5dd6441a5b7e339b1c4257725175f9d1b6ec01d90a000bbfec1d16be5.",
+        "path": "../../Classification/JPEGImages/levle0_121.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 828240b5dd6441a5b7e339b1c4257725175f9d1b6ec01d90a000bbfec1d16be5.",
+        "path": "../../Classification/JPEGImages/levle1_504.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 85ea30ada51213b9e42f13611eb085c8a0be1b7e8d68861a2a73fa0cf7839ed6.",
+        "path": "../../Classification/JPEGImages/levle1_166.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 85ea30ada51213b9e42f13611eb085c8a0be1b7e8d68861a2a73fa0cf7839ed6.",
+        "path": "../../Classification/JPEGImages/levle1_292.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 8e219a67bbef8530223502453b2c1924b89b56e8ca09e6b84120a84354bb8615.",
+        "path": "../../Classification/JPEGImages/levle0_172.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 8e219a67bbef8530223502453b2c1924b89b56e8ca09e6b84120a84354bb8615.",
+        "path": "../../Classification/JPEGImages/levle1_283.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 9d1adbdaf1926dc91901a53e69f56be19045ea7f3f36f557244a7f0367f833d9.",
+        "path": "../../Classification/JPEGImages/levle0_185.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: 9d1adbdaf1926dc91901a53e69f56be19045ea7f3f36f557244a7f0367f833d9.",
+        "path": "../../Classification/JPEGImages/levle1_286.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: a358d7cd91a81d928c821574c00a6ccbe747a2edcad4661c7970284a9d6d5ba9.",
+        "path": "../../Classification/JPEGImages/levle1_157.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: a358d7cd91a81d928c821574c00a6ccbe747a2edcad4661c7970284a9d6d5ba9.",
+        "path": "../../Classification/JPEGImages/levle1_285.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: a83e345a1b8432e7a4b192ecd8df57d898430f57f7b03aad8c115d719a362bef.",
+        "path": "../../Classification/JPEGImages/levle1_164.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: a83e345a1b8432e7a4b192ecd8df57d898430f57f7b03aad8c115d719a362bef.",
+        "path": "../../Classification/JPEGImages/levle1_291.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: ac383d9c0f7a262ea2a61061ff5c4040615fde79388aaa9076be884550281857.",
+        "path": "../../Classification/JPEGImages/levle1_132.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: ac383d9c0f7a262ea2a61061ff5c4040615fde79388aaa9076be884550281857.",
+        "path": "../../Classification/JPEGImages/levle1_485.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: acf8394dd155c64512e3cf445577307615150567a0b42bfa0ec26c5e770963a6.",
+        "path": "../../Classification/JPEGImages/levle3_109.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: acf8394dd155c64512e3cf445577307615150567a0b42bfa0ec26c5e770963a6.",
+        "path": "../../Classification/JPEGImages/levle3_140.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: af66359e36acb57b34e05a2afdcecc11f2e79d77d86da66bae0197b7875c5971.",
+        "path": "../../Classification/JPEGImages/levle1_610.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: af66359e36acb57b34e05a2afdcecc11f2e79d77d86da66bae0197b7875c5971.",
+        "path": "../../Classification/JPEGImages/levle1_611.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: af8003fc89da8bb87c30596ab5a84e7e90843b935e38adbdd5485880095de743.",
+        "path": "../../Classification/JPEGImages/levle0_98.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: af8003fc89da8bb87c30596ab5a84e7e90843b935e38adbdd5485880095de743.",
+        "path": "../../Classification/JPEGImages/levle0_99.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: b257a192234a349684044c442598529d18dcd6830961450fd72620606f967045.",
+        "path": "../../Classification/JPEGImages/levle0_117.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: b257a192234a349684044c442598529d18dcd6830961450fd72620606f967045.",
+        "path": "../../Classification/JPEGImages/levle0_207.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: b25d783297ecffaacce4206049d1c91c1be56df59a47008f6cb95fb46dbb497b.",
+        "path": "../../Classification/JPEGImages/levle1_138.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: b25d783297ecffaacce4206049d1c91c1be56df59a47008f6cb95fb46dbb497b.",
+        "path": "../../Classification/JPEGImages/levle1_460.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: b538b91a3834cc61f2bae23436e14c79dc7695f268b9faed486bcafca0ba87fe.",
+        "path": "../../Classification/JPEGImages/levle1_131.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: b538b91a3834cc61f2bae23436e14c79dc7695f268b9faed486bcafca0ba87fe.",
+        "path": "../../Classification/JPEGImages/levle2_128.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: bee48890973035c00481b8ccb33e15b76b0d0d9ba2599e86c0b4f1af3fbeaf65.",
+        "path": "../../Classification/JPEGImages/levle1_133.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: bee48890973035c00481b8ccb33e15b76b0d0d9ba2599e86c0b4f1af3fbeaf65.",
+        "path": "../../Classification/JPEGImages/levle1_503.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: c0a65e9715c24491a9cf3bbadbf88e06ebe4e5040ebaffdf9d70f997995c7933.",
+        "path": "../../Classification/JPEGImages/levle1_161.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: c0a65e9715c24491a9cf3bbadbf88e06ebe4e5040ebaffdf9d70f997995c7933.",
+        "path": "../../Classification/JPEGImages/levle1_288.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: d6e18cb937238b07c43af479b2452d79e1d32c4925b98b726f5e14721d848edc.",
+        "path": "../../Classification/JPEGImages/levle1_162.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: d6e18cb937238b07c43af479b2452d79e1d32c4925b98b726f5e14721d848edc.",
+        "path": "../../Classification/JPEGImages/levle1_289.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: e495c0ba4c919bc4392bba4fafe3036fa8df7b9fb54a6ffb54f04b05cc4f1d73.",
+        "path": "../../Classification/JPEGImages/levle1_129.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: e495c0ba4c919bc4392bba4fafe3036fa8df7b9fb54a6ffb54f04b05cc4f1d73.",
+        "path": "../../Classification/JPEGImages/levle1_206.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: e5927997a3ff6d90155559c5ef3d7bca1eeb6c7b10fef464dbf1a3b8694893c6.",
+        "path": "../../Classification/JPEGImages/levle1_140.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: e5927997a3ff6d90155559c5ef3d7bca1eeb6c7b10fef464dbf1a3b8694893c6.",
+        "path": "../../Classification/JPEGImages/levle1_358.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: e6f1ca9fee7ba325b431b4d8b9479f5ffe08614b6e9ddefa7e11d3f0401aa1f7.",
+        "path": "../../Classification/JPEGImages/levle1_22.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: e6f1ca9fee7ba325b431b4d8b9479f5ffe08614b6e9ddefa7e11d3f0401aa1f7.",
+        "path": "../../Classification/JPEGImages/levle2_152.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: f3cdc89f4d872cf7d23832684598b638bfa78b4b716bc061a41e7b1eed017ae4.",
+        "path": "../../Classification/JPEGImages/levle0_263.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: f3cdc89f4d872cf7d23832684598b638bfa78b4b716bc061a41e7b1eed017ae4.",
+        "path": "../../Classification/JPEGImages/levle0_96.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: f5e03bbf416d61a4530403f32db46b69f57b25f6f636781c6b37a45db42400aa.",
+        "path": "../../Classification/JPEGImages/levle0_116.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: f5e03bbf416d61a4530403f32db46b69f57b25f6f636781c6b37a45db42400aa.",
+        "path": "../../Classification/JPEGImages/levle0_23.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: fb7acfc404266134438b0e34714416700ae62d723b62e887df9c5ab899f42042.",
+        "path": "../../Classification/JPEGImages/levle2_72.jpg"
+      },
+      {
+        "detail": "Duplicate SHA-256 group: fb7acfc404266134438b0e34714416700ae62d723b62e887df9c5ab899f42042.",
+        "path": "../../Classification/JPEGImages/levle2_97.jpg"
+      }
+    ],
+    "filename_extension_mismatches": [],
+    "invalid_annotations": [],
+    "invalid_bounding_boxes": [],
+    "missing_images_for_xml": [],
+    "missing_xml_for_images": [],
+    "very_small_bounding_boxes": [
+      {
+        "detail": "Object 1: width=19, height=9; threshold=10px.",
+        "path": "Annotations/levle0_12.xml"
+      },
+      {
+        "detail": "Object 2: width=17, height=10; threshold=10px.",
+        "path": "Annotations/levle0_224.xml"
+      },
+      {
+        "detail": "Object 4: width=9, height=17; threshold=10px.",
+        "path": "Annotations/levle1_18.xml"
+      },
+      {
+        "detail": "Object 2: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle1_19.xml"
+      },
+      {
+        "detail": "Object 3: width=8, height=12; threshold=10px.",
+        "path": "Annotations/levle1_19.xml"
+      },
+      {
+        "detail": "Object 5: width=9, height=15; threshold=10px.",
+        "path": "Annotations/levle1_19.xml"
+      },
+      {
+        "detail": "Object 2: width=9, height=15; threshold=10px.",
+        "path": "Annotations/levle1_25.xml"
+      },
+      {
+        "detail": "Object 4: width=11, height=7; threshold=10px.",
+        "path": "Annotations/levle1_25.xml"
+      },
+      {
+        "detail": "Object 6: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle1_25.xml"
+      },
+      {
+        "detail": "Object 7: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle1_25.xml"
+      },
+      {
+        "detail": "Object 8: width=13, height=9; threshold=10px.",
+        "path": "Annotations/levle1_25.xml"
+      },
+      {
+        "detail": "Object 9: width=5, height=5; threshold=10px.",
+        "path": "Annotations/levle1_25.xml"
+      },
+      {
+        "detail": "Object 10: width=10, height=12; threshold=10px.",
+        "path": "Annotations/levle1_25.xml"
+      },
+      {
+        "detail": "Object 11: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle1_25.xml"
+      },
+      {
+        "detail": "Object 12: width=13, height=9; threshold=10px.",
+        "path": "Annotations/levle1_25.xml"
+      },
+      {
+        "detail": "Object 1: width=5, height=7; threshold=10px.",
+        "path": "Annotations/levle1_255.xml"
+      },
+      {
+        "detail": "Object 2: width=7, height=9; threshold=10px.",
+        "path": "Annotations/levle1_255.xml"
+      },
+      {
+        "detail": "Object 4: width=8, height=7; threshold=10px.",
+        "path": "Annotations/levle1_255.xml"
+      },
+      {
+        "detail": "Object 5: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle1_255.xml"
+      },
+      {
+        "detail": "Object 1: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle1_256.xml"
+      },
+      {
+        "detail": "Object 3: width=10, height=6; threshold=10px.",
+        "path": "Annotations/levle1_256.xml"
+      },
+      {
+        "detail": "Object 4: width=10, height=13; threshold=10px.",
+        "path": "Annotations/levle1_256.xml"
+      },
+      {
+        "detail": "Object 5: width=10, height=13; threshold=10px.",
+        "path": "Annotations/levle1_256.xml"
+      },
+      {
+        "detail": "Object 11: width=10, height=17; threshold=10px.",
+        "path": "Annotations/levle1_4.xml"
+      },
+      {
+        "detail": "Object 6: width=10, height=19; threshold=10px.",
+        "path": "Annotations/levle1_452.xml"
+      },
+      {
+        "detail": "Object 5: width=7, height=15; threshold=10px.",
+        "path": "Annotations/levle1_553.xml"
+      },
+      {
+        "detail": "Object 1: width=9, height=7; threshold=10px.",
+        "path": "Annotations/levle1_638.xml"
+      },
+      {
+        "detail": "Object 2: width=11, height=8; threshold=10px.",
+        "path": "Annotations/levle1_638.xml"
+      },
+      {
+        "detail": "Object 4: width=13, height=7; threshold=10px.",
+        "path": "Annotations/levle1_638.xml"
+      },
+      {
+        "detail": "Object 5: width=13, height=10; threshold=10px.",
+        "path": "Annotations/levle1_638.xml"
+      },
+      {
+        "detail": "Object 6: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle1_638.xml"
+      },
+      {
+        "detail": "Object 7: width=5, height=14; threshold=10px.",
+        "path": "Annotations/levle1_638.xml"
+      },
+      {
+        "detail": "Object 1: width=9, height=13; threshold=10px.",
+        "path": "Annotations/levle1_639.xml"
+      },
+      {
+        "detail": "Object 3: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle1_639.xml"
+      },
+      {
+        "detail": "Object 4: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle1_639.xml"
+      },
+      {
+        "detail": "Object 5: width=9, height=11; threshold=10px.",
+        "path": "Annotations/levle1_639.xml"
+      },
+      {
+        "detail": "Object 9: width=17, height=10; threshold=10px.",
+        "path": "Annotations/levle1_639.xml"
+      },
+      {
+        "detail": "Object 1: width=12, height=8; threshold=10px.",
+        "path": "Annotations/levle1_640.xml"
+      },
+      {
+        "detail": "Object 2: width=11, height=6; threshold=10px.",
+        "path": "Annotations/levle1_640.xml"
+      },
+      {
+        "detail": "Object 3: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle1_640.xml"
+      },
+      {
+        "detail": "Object 5: width=11, height=8; threshold=10px.",
+        "path": "Annotations/levle1_640.xml"
+      },
+      {
+        "detail": "Object 1: width=10, height=7; threshold=10px.",
+        "path": "Annotations/levle1_641.xml"
+      },
+      {
+        "detail": "Object 2: width=13, height=10; threshold=10px.",
+        "path": "Annotations/levle1_641.xml"
+      },
+      {
+        "detail": "Object 4: width=16, height=10; threshold=10px.",
+        "path": "Annotations/levle1_641.xml"
+      },
+      {
+        "detail": "Object 6: width=12, height=9; threshold=10px.",
+        "path": "Annotations/levle1_641.xml"
+      },
+      {
+        "detail": "Object 9: width=14, height=7; threshold=10px.",
+        "path": "Annotations/levle1_641.xml"
+      },
+      {
+        "detail": "Object 10: width=14, height=10; threshold=10px.",
+        "path": "Annotations/levle1_641.xml"
+      },
+      {
+        "detail": "Object 2: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle1_642.xml"
+      },
+      {
+        "detail": "Object 3: width=11, height=6; threshold=10px.",
+        "path": "Annotations/levle1_642.xml"
+      },
+      {
+        "detail": "Object 4: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle1_642.xml"
+      },
+      {
+        "detail": "Object 5: width=13, height=8; threshold=10px.",
+        "path": "Annotations/levle1_642.xml"
+      },
+      {
+        "detail": "Object 11: width=10, height=17; threshold=10px.",
+        "path": "Annotations/levle1_8.xml"
+      },
+      {
+        "detail": "Object 23: width=10, height=17; threshold=10px.",
+        "path": "Annotations/levle2_1.xml"
+      },
+      {
+        "detail": "Object 9: width=9, height=18; threshold=10px.",
+        "path": "Annotations/levle2_116.xml"
+      },
+      {
+        "detail": "Object 32: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle2_12.xml"
+      },
+      {
+        "detail": "Object 22: width=9, height=13; threshold=10px.",
+        "path": "Annotations/levle2_127.xml"
+      },
+      {
+        "detail": "Object 28: width=12, height=10; threshold=10px.",
+        "path": "Annotations/levle2_127.xml"
+      },
+      {
+        "detail": "Object 4: width=9, height=13; threshold=10px.",
+        "path": "Annotations/levle2_14.xml"
+      },
+      {
+        "detail": "Object 9: width=10, height=15; threshold=10px.",
+        "path": "Annotations/levle2_14.xml"
+      },
+      {
+        "detail": "Object 11: width=9, height=17; threshold=10px.",
+        "path": "Annotations/levle2_14.xml"
+      },
+      {
+        "detail": "Object 17: width=10, height=14; threshold=10px.",
+        "path": "Annotations/levle2_14.xml"
+      },
+      {
+        "detail": "Object 20: width=9, height=13; threshold=10px.",
+        "path": "Annotations/levle2_14.xml"
+      },
+      {
+        "detail": "Object 23: width=10, height=18; threshold=10px.",
+        "path": "Annotations/levle2_14.xml"
+      },
+      {
+        "detail": "Object 28: width=8, height=11; threshold=10px.",
+        "path": "Annotations/levle2_14.xml"
+      },
+      {
+        "detail": "Object 6: width=22, height=8; threshold=10px.",
+        "path": "Annotations/levle2_18.xml"
+      },
+      {
+        "detail": "Object 7: width=7, height=15; threshold=10px.",
+        "path": "Annotations/levle2_18.xml"
+      },
+      {
+        "detail": "Object 8: width=9, height=6; threshold=10px.",
+        "path": "Annotations/levle2_18.xml"
+      },
+      {
+        "detail": "Object 17: width=16, height=8; threshold=10px.",
+        "path": "Annotations/levle2_18.xml"
+      },
+      {
+        "detail": "Object 2: width=12, height=10; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 4: width=9, height=13; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 5: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 6: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 7: width=7, height=8; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 8: width=9, height=7; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 10: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 11: width=13, height=8; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 13: width=6, height=8; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 14: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 15: width=6, height=5; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 16: width=10, height=14; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 17: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 18: width=11, height=8; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 19: width=8, height=11; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 20: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 21: width=13, height=6; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 22: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 24: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 25: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 26: width=8, height=7; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 28: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 29: width=6, height=12; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 30: width=8, height=15; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 32: width=9, height=14; threshold=10px.",
+        "path": "Annotations/levle2_188.xml"
+      },
+      {
+        "detail": "Object 4: width=7, height=11; threshold=10px.",
+        "path": "Annotations/levle2_19.xml"
+      },
+      {
+        "detail": "Object 5: width=8, height=12; threshold=10px.",
+        "path": "Annotations/levle2_19.xml"
+      },
+      {
+        "detail": "Object 7: width=12, height=8; threshold=10px.",
+        "path": "Annotations/levle2_19.xml"
+      },
+      {
+        "detail": "Object 9: width=13, height=9; threshold=10px.",
+        "path": "Annotations/levle2_19.xml"
+      },
+      {
+        "detail": "Object 13: width=11, height=8; threshold=10px.",
+        "path": "Annotations/levle2_19.xml"
+      },
+      {
+        "detail": "Object 15: width=11, height=7; threshold=10px.",
+        "path": "Annotations/levle2_19.xml"
+      },
+      {
+        "detail": "Object 16: width=9, height=12; threshold=10px.",
+        "path": "Annotations/levle2_19.xml"
+      },
+      {
+        "detail": "Object 17: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle2_19.xml"
+      },
+      {
+        "detail": "Object 18: width=10, height=13; threshold=10px.",
+        "path": "Annotations/levle2_19.xml"
+      },
+      {
+        "detail": "Object 22: width=14, height=8; threshold=10px.",
+        "path": "Annotations/levle2_19.xml"
+      },
+      {
+        "detail": "Object 23: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle2_19.xml"
+      },
+      {
+        "detail": "Object 28: width=9, height=11; threshold=10px.",
+        "path": "Annotations/levle2_19.xml"
+      },
+      {
+        "detail": "Object 30: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle2_19.xml"
+      },
+      {
+        "detail": "Object 31: width=10, height=12; threshold=10px.",
+        "path": "Annotations/levle2_19.xml"
+      },
+      {
+        "detail": "Object 5: width=10, height=27; threshold=10px.",
+        "path": "Annotations/levle2_2.xml"
+      },
+      {
+        "detail": "Object 12: width=4, height=14; threshold=10px.",
+        "path": "Annotations/levle2_24.xml"
+      },
+      {
+        "detail": "Object 35: width=10, height=41; threshold=10px.",
+        "path": "Annotations/levle2_24.xml"
+      },
+      {
+        "detail": "Object 21: width=10, height=14; threshold=10px.",
+        "path": "Annotations/levle2_30.xml"
+      },
+      {
+        "detail": "Object 1: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 4: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 6: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 7: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 8: width=12, height=6; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 9: width=10, height=7; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 11: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 12: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 13: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 14: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 15: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 18: width=8, height=7; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 19: width=7, height=9; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 21: width=7, height=10; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 23: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 25: width=4, height=9; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 26: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 30: width=11, height=8; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 32: width=11, height=7; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 33: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 34: width=14, height=9; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 36: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 37: width=6, height=7; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 38: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 39: width=12, height=10; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 40: width=15, height=10; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 41: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 42: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle2_7.xml"
+      },
+      {
+        "detail": "Object 1: width=6, height=9; threshold=10px.",
+        "path": "Annotations/levle2_89.xml"
+      },
+      {
+        "detail": "Object 2: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle2_89.xml"
+      },
+      {
+        "detail": "Object 4: width=6, height=10; threshold=10px.",
+        "path": "Annotations/levle2_89.xml"
+      },
+      {
+        "detail": "Object 5: width=8, height=12; threshold=10px.",
+        "path": "Annotations/levle2_89.xml"
+      },
+      {
+        "detail": "Object 7: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle2_89.xml"
+      },
+      {
+        "detail": "Object 9: width=13, height=8; threshold=10px.",
+        "path": "Annotations/levle2_89.xml"
+      },
+      {
+        "detail": "Object 10: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle2_89.xml"
+      },
+      {
+        "detail": "Object 12: width=14, height=10; threshold=10px.",
+        "path": "Annotations/levle2_89.xml"
+      },
+      {
+        "detail": "Object 17: width=13, height=8; threshold=10px.",
+        "path": "Annotations/levle2_89.xml"
+      },
+      {
+        "detail": "Object 24: width=19, height=10; threshold=10px.",
+        "path": "Annotations/levle2_89.xml"
+      },
+      {
+        "detail": "Object 2: width=10, height=13; threshold=10px.",
+        "path": "Annotations/levle2_90.xml"
+      },
+      {
+        "detail": "Object 4: width=7, height=10; threshold=10px.",
+        "path": "Annotations/levle2_90.xml"
+      },
+      {
+        "detail": "Object 7: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle2_90.xml"
+      },
+      {
+        "detail": "Object 8: width=6, height=14; threshold=10px.",
+        "path": "Annotations/levle2_90.xml"
+      },
+      {
+        "detail": "Object 14: width=13, height=10; threshold=10px.",
+        "path": "Annotations/levle2_90.xml"
+      },
+      {
+        "detail": "Object 15: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle2_90.xml"
+      },
+      {
+        "detail": "Object 16: width=9, height=12; threshold=10px.",
+        "path": "Annotations/levle2_90.xml"
+      },
+      {
+        "detail": "Object 18: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle2_90.xml"
+      },
+      {
+        "detail": "Object 19: width=8, height=13; threshold=10px.",
+        "path": "Annotations/levle2_90.xml"
+      },
+      {
+        "detail": "Object 22: width=15, height=10; threshold=10px.",
+        "path": "Annotations/levle2_90.xml"
+      },
+      {
+        "detail": "Object 23: width=12, height=9; threshold=10px.",
+        "path": "Annotations/levle2_90.xml"
+      },
+      {
+        "detail": "Object 24: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle2_90.xml"
+      },
+      {
+        "detail": "Object 25: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle2_90.xml"
+      },
+      {
+        "detail": "Object 26: width=8, height=13; threshold=10px.",
+        "path": "Annotations/levle2_90.xml"
+      },
+      {
+        "detail": "Object 1: width=5, height=7; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 2: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 3: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 4: width=14, height=8; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 5: width=7, height=7; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 6: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 7: width=6, height=8; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 8: width=7, height=7; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 9: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 10: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 11: width=8, height=12; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 12: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 13: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 14: width=7, height=7; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 15: width=9, height=7; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 17: width=7, height=6; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 18: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 20: width=9, height=5; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 21: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 22: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 24: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 25: width=5, height=8; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 26: width=6, height=9; threshold=10px.",
+        "path": "Annotations/levle2_92.xml"
+      },
+      {
+        "detail": "Object 2: width=8, height=11; threshold=10px.",
+        "path": "Annotations/levle2_93.xml"
+      },
+      {
+        "detail": "Object 4: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle2_93.xml"
+      },
+      {
+        "detail": "Object 5: width=11, height=7; threshold=10px.",
+        "path": "Annotations/levle2_93.xml"
+      },
+      {
+        "detail": "Object 7: width=7, height=12; threshold=10px.",
+        "path": "Annotations/levle2_93.xml"
+      },
+      {
+        "detail": "Object 8: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle2_93.xml"
+      },
+      {
+        "detail": "Object 9: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle2_93.xml"
+      },
+      {
+        "detail": "Object 10: width=6, height=8; threshold=10px.",
+        "path": "Annotations/levle2_93.xml"
+      },
+      {
+        "detail": "Object 12: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle2_93.xml"
+      },
+      {
+        "detail": "Object 13: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle2_93.xml"
+      },
+      {
+        "detail": "Object 15: width=7, height=12; threshold=10px.",
+        "path": "Annotations/levle2_93.xml"
+      },
+      {
+        "detail": "Object 20: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle2_93.xml"
+      },
+      {
+        "detail": "Object 21: width=15, height=10; threshold=10px.",
+        "path": "Annotations/levle2_93.xml"
+      },
+      {
+        "detail": "Object 22: width=8, height=10; threshold=10px.",
+        "path": "Annotations/levle2_93.xml"
+      },
+      {
+        "detail": "Object 23: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle2_93.xml"
+      },
+      {
+        "detail": "Object 24: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle2_93.xml"
+      },
+      {
+        "detail": "Object 28: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle2_93.xml"
+      },
+      {
+        "detail": "Object 30: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle2_93.xml"
+      },
+      {
+        "detail": "Object 31: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle2_93.xml"
+      },
+      {
+        "detail": "Object 32: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle2_93.xml"
+      },
+      {
+        "detail": "Object 1: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 2: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 3: width=6, height=9; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 4: width=9, height=13; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 5: width=16, height=10; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 6: width=5, height=10; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 8: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 9: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 10: width=5, height=8; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 11: width=8, height=6; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 12: width=7, height=11; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 14: width=6, height=7; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 15: width=10, height=7; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 16: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 17: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 18: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 19: width=6, height=8; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 20: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 21: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 22: width=8, height=7; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 24: width=8, height=10; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 26: width=9, height=13; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 28: width=9, height=12; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 29: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 30: width=4, height=8; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 31: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 34: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 35: width=7, height=8; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 36: width=12, height=9; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 37: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 38: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 39: width=10, height=12; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 42: width=8, height=10; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 43: width=8, height=14; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 44: width=12, height=10; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 46: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 48: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 50: width=7, height=10; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 51: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 52: width=7, height=12; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 54: width=14, height=10; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 55: width=15, height=10; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 56: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 60: width=13, height=8; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 62: width=11, height=8; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 64: width=7, height=8; threshold=10px.",
+        "path": "Annotations/levle3_0.xml"
+      },
+      {
+        "detail": "Object 3: width=19, height=10; threshold=10px.",
+        "path": "Annotations/levle3_1.xml"
+      },
+      {
+        "detail": "Object 5: width=30, height=10; threshold=10px.",
+        "path": "Annotations/levle3_10.xml"
+      },
+      {
+        "detail": "Object 15: width=39, height=10; threshold=10px.",
+        "path": "Annotations/levle3_10.xml"
+      },
+      {
+        "detail": "Object 7: width=9, height=26; threshold=10px.",
+        "path": "Annotations/levle3_100.xml"
+      },
+      {
+        "detail": "Object 54: width=17, height=10; threshold=10px.",
+        "path": "Annotations/levle3_100.xml"
+      },
+      {
+        "detail": "Object 7: width=15, height=7; threshold=10px.",
+        "path": "Annotations/levle3_107.xml"
+      },
+      {
+        "detail": "Object 11: width=14, height=10; threshold=10px.",
+        "path": "Annotations/levle3_107.xml"
+      },
+      {
+        "detail": "Object 19: width=13, height=10; threshold=10px.",
+        "path": "Annotations/levle3_107.xml"
+      },
+      {
+        "detail": "Object 21: width=9, height=11; threshold=10px.",
+        "path": "Annotations/levle3_107.xml"
+      },
+      {
+        "detail": "Object 45: width=12, height=9; threshold=10px.",
+        "path": "Annotations/levle3_107.xml"
+      },
+      {
+        "detail": "Object 2: width=13, height=9; threshold=10px.",
+        "path": "Annotations/levle3_108.xml"
+      },
+      {
+        "detail": "Object 5: width=15, height=10; threshold=10px.",
+        "path": "Annotations/levle3_108.xml"
+      },
+      {
+        "detail": "Object 8: width=15, height=9; threshold=10px.",
+        "path": "Annotations/levle3_108.xml"
+      },
+      {
+        "detail": "Object 10: width=15, height=9; threshold=10px.",
+        "path": "Annotations/levle3_108.xml"
+      },
+      {
+        "detail": "Object 13: width=16, height=9; threshold=10px.",
+        "path": "Annotations/levle3_108.xml"
+      },
+      {
+        "detail": "Object 16: width=15, height=8; threshold=10px.",
+        "path": "Annotations/levle3_108.xml"
+      },
+      {
+        "detail": "Object 19: width=10, height=12; threshold=10px.",
+        "path": "Annotations/levle3_108.xml"
+      },
+      {
+        "detail": "Object 22: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_108.xml"
+      },
+      {
+        "detail": "Object 27: width=10, height=14; threshold=10px.",
+        "path": "Annotations/levle3_108.xml"
+      },
+      {
+        "detail": "Object 28: width=10, height=14; threshold=10px.",
+        "path": "Annotations/levle3_108.xml"
+      },
+      {
+        "detail": "Object 36: width=21, height=9; threshold=10px.",
+        "path": "Annotations/levle3_108.xml"
+      },
+      {
+        "detail": "Object 40: width=12, height=8; threshold=10px.",
+        "path": "Annotations/levle3_108.xml"
+      },
+      {
+        "detail": "Object 49: width=12, height=10; threshold=10px.",
+        "path": "Annotations/levle3_108.xml"
+      },
+      {
+        "detail": "Object 53: width=13, height=10; threshold=10px.",
+        "path": "Annotations/levle3_108.xml"
+      },
+      {
+        "detail": "Object 3: width=8, height=7; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 4: width=9, height=5; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 5: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 7: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 8: width=13, height=7; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 9: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 11: width=13, height=10; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 14: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 15: width=9, height=7; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 19: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 21: width=16, height=8; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 24: width=15, height=10; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 28: width=17, height=10; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 33: width=18, height=7; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 35: width=12, height=6; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 36: width=6, height=11; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 43: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 45: width=13, height=10; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 46: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 49: width=15, height=10; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 50: width=13, height=8; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 51: width=18, height=9; threshold=10px.",
+        "path": "Annotations/levle3_109.xml"
+      },
+      {
+        "detail": "Object 4: width=13, height=8; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 9: width=16, height=10; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 12: width=10, height=12; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 16: width=16, height=9; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 30: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 33: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 34: width=15, height=9; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 35: width=14, height=8; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 36: width=15, height=8; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 39: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 42: width=10, height=6; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 44: width=12, height=10; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 46: width=13, height=10; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 48: width=12, height=9; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 50: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 51: width=13, height=9; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 54: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 57: width=12, height=10; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 59: width=11, height=8; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 60: width=12, height=8; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 61: width=6, height=7; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 62: width=7, height=9; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 63: width=12, height=9; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 64: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_110.xml"
+      },
+      {
+        "detail": "Object 1: width=7, height=11; threshold=10px.",
+        "path": "Annotations/levle3_118.xml"
+      },
+      {
+        "detail": "Object 43: width=17, height=10; threshold=10px.",
+        "path": "Annotations/levle3_119.xml"
+      },
+      {
+        "detail": "Object 41: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_120.xml"
+      },
+      {
+        "detail": "Object 49: width=10, height=13; threshold=10px.",
+        "path": "Annotations/levle3_120.xml"
+      },
+      {
+        "detail": "Object 50: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_120.xml"
+      },
+      {
+        "detail": "Object 51: width=9, height=17; threshold=10px.",
+        "path": "Annotations/levle3_120.xml"
+      },
+      {
+        "detail": "Object 16: width=5, height=7; threshold=10px.",
+        "path": "Annotations/levle3_121.xml"
+      },
+      {
+        "detail": "Object 1: width=12, height=9; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 2: width=13, height=10; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 3: width=6, height=12; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 4: width=13, height=9; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 5: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 6: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 7: width=10, height=12; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 8: width=12, height=10; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 9: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 10: width=6, height=7; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 11: width=7, height=9; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 12: width=10, height=13; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 13: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 14: width=10, height=13; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 15: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 16: width=13, height=10; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 17: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 20: width=13, height=8; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 21: width=14, height=10; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 22: width=7, height=7; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 24: width=14, height=10; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 25: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 27: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 29: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 30: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 31: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 32: width=9, height=12; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 33: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 34: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 35: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 36: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 37: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 38: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 39: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 40: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 41: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 42: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 43: width=8, height=7; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 44: width=6, height=7; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 45: width=6, height=6; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 46: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 47: width=7, height=8; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 48: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 49: width=7, height=7; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 50: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 51: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 52: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 53: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 54: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 55: width=8, height=7; threshold=10px.",
+        "path": "Annotations/levle3_123.xml"
+      },
+      {
+        "detail": "Object 8: width=7, height=8; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 13: width=9, height=14; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 14: width=8, height=13; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 17: width=13, height=9; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 21: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 22: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 23: width=12, height=7; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 25: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 26: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 27: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 30: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 31: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 32: width=8, height=10; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 35: width=9, height=14; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 36: width=5, height=9; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 37: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 38: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 39: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 49: width=9, height=11; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 51: width=13, height=10; threshold=10px.",
+        "path": "Annotations/levle3_125.xml"
+      },
+      {
+        "detail": "Object 14: width=35, height=9; threshold=10px.",
+        "path": "Annotations/levle3_126.xml"
+      },
+      {
+        "detail": "Object 20: width=10, height=21; threshold=10px.",
+        "path": "Annotations/levle3_126.xml"
+      },
+      {
+        "detail": "Object 5: width=8, height=10; threshold=10px.",
+        "path": "Annotations/levle3_127.xml"
+      },
+      {
+        "detail": "Object 6: width=7, height=7; threshold=10px.",
+        "path": "Annotations/levle3_127.xml"
+      },
+      {
+        "detail": "Object 9: width=16, height=8; threshold=10px.",
+        "path": "Annotations/levle3_127.xml"
+      },
+      {
+        "detail": "Object 48: width=14, height=10; threshold=10px.",
+        "path": "Annotations/levle3_127.xml"
+      },
+      {
+        "detail": "Object 61: width=14, height=10; threshold=10px.",
+        "path": "Annotations/levle3_127.xml"
+      },
+      {
+        "detail": "Object 62: width=14, height=10; threshold=10px.",
+        "path": "Annotations/levle3_127.xml"
+      },
+      {
+        "detail": "Object 1: width=15, height=8; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 2: width=12, height=7; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 3: width=15, height=9; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 4: width=7, height=8; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 6: width=16, height=10; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 7: width=15, height=10; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 8: width=10, height=12; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 13: width=16, height=7; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 15: width=12, height=6; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 17: width=5, height=8; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 18: width=8, height=14; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 24: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 26: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 27: width=10, height=15; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 28: width=9, height=13; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 30: width=7, height=9; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 31: width=9, height=11; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 33: width=10, height=7; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 34: width=9, height=5; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 35: width=6, height=12; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 36: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 38: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 39: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 41: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 42: width=12, height=9; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 43: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 44: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 45: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 46: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 47: width=12, height=9; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 48: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 49: width=12, height=9; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 50: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 51: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 52: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 53: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 54: width=10, height=7; threshold=10px.",
+        "path": "Annotations/levle3_128.xml"
+      },
+      {
+        "detail": "Object 13: width=10, height=43; threshold=10px.",
+        "path": "Annotations/levle3_136.xml"
+      },
+      {
+        "detail": "Object 1: width=7, height=8; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 2: width=11, height=8; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 4: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 5: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 7: width=9, height=13; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 8: width=13, height=8; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 9: width=9, height=11; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 10: width=10, height=12; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 11: width=8, height=12; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 13: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 14: width=9, height=12; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 15: width=7, height=12; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 16: width=20, height=10; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 17: width=9, height=12; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 18: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 19: width=12, height=9; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 20: width=10, height=12; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 23: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 26: width=9, height=12; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 30: width=13, height=10; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 34: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 35: width=9, height=11; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 38: width=6, height=10; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 39: width=13, height=9; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 40: width=17, height=8; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 41: width=15, height=10; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 45: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 46: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 48: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 49: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 52: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 53: width=7, height=6; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 54: width=7, height=6; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 55: width=9, height=11; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 56: width=11, height=8; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 57: width=7, height=8; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 58: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle3_137.xml"
+      },
+      {
+        "detail": "Object 2: width=10, height=7; threshold=10px.",
+        "path": "Annotations/levle3_140.xml"
+      },
+      {
+        "detail": "Object 15: width=10, height=16; threshold=10px.",
+        "path": "Annotations/levle3_140.xml"
+      },
+      {
+        "detail": "Object 19: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle3_140.xml"
+      },
+      {
+        "detail": "Object 21: width=10, height=13; threshold=10px.",
+        "path": "Annotations/levle3_140.xml"
+      },
+      {
+        "detail": "Object 24: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_140.xml"
+      },
+      {
+        "detail": "Object 25: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_140.xml"
+      },
+      {
+        "detail": "Object 29: width=10, height=12; threshold=10px.",
+        "path": "Annotations/levle3_140.xml"
+      },
+      {
+        "detail": "Object 31: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle3_140.xml"
+      },
+      {
+        "detail": "Object 35: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_140.xml"
+      },
+      {
+        "detail": "Object 36: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_140.xml"
+      },
+      {
+        "detail": "Object 37: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_140.xml"
+      },
+      {
+        "detail": "Object 39: width=14, height=10; threshold=10px.",
+        "path": "Annotations/levle3_140.xml"
+      },
+      {
+        "detail": "Object 45: width=9, height=11; threshold=10px.",
+        "path": "Annotations/levle3_140.xml"
+      },
+      {
+        "detail": "Object 48: width=10, height=12; threshold=10px.",
+        "path": "Annotations/levle3_140.xml"
+      },
+      {
+        "detail": "Object 50: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle3_140.xml"
+      },
+      {
+        "detail": "Object 51: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle3_140.xml"
+      },
+      {
+        "detail": "Object 1: width=12, height=9; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 2: width=6, height=12; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 3: width=7, height=13; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 6: width=9, height=12; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 8: width=9, height=14; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 11: width=9, height=12; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 19: width=14, height=8; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 22: width=13, height=10; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 26: width=10, height=13; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 31: width=10, height=14; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 34: width=4, height=13; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 35: width=6, height=10; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 38: width=9, height=18; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 39: width=10, height=13; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 43: width=16, height=10; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 44: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 46: width=12, height=7; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 48: width=13, height=9; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 50: width=8, height=12; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 51: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 52: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 54: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 55: width=13, height=10; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 56: width=13, height=9; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 57: width=12, height=6; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 58: width=10, height=7; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 61: width=9, height=12; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 63: width=10, height=6; threshold=10px.",
+        "path": "Annotations/levle3_141.xml"
+      },
+      {
+        "detail": "Object 8: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle3_145.xml"
+      },
+      {
+        "detail": "Object 12: width=9, height=26; threshold=10px.",
+        "path": "Annotations/levle3_19.xml"
+      },
+      {
+        "detail": "Object 27: width=7, height=30; threshold=10px.",
+        "path": "Annotations/levle3_19.xml"
+      },
+      {
+        "detail": "Object 33: width=9, height=20; threshold=10px.",
+        "path": "Annotations/levle3_19.xml"
+      },
+      {
+        "detail": "Object 32: width=12, height=8; threshold=10px.",
+        "path": "Annotations/levle3_2.xml"
+      },
+      {
+        "detail": "Object 35: width=7, height=13; threshold=10px.",
+        "path": "Annotations/levle3_20.xml"
+      },
+      {
+        "detail": "Object 6: width=8, height=15; threshold=10px.",
+        "path": "Annotations/levle3_22.xml"
+      },
+      {
+        "detail": "Object 26: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_22.xml"
+      },
+      {
+        "detail": "Object 40: width=8, height=11; threshold=10px.",
+        "path": "Annotations/levle3_22.xml"
+      },
+      {
+        "detail": "Object 46: width=13, height=10; threshold=10px.",
+        "path": "Annotations/levle3_22.xml"
+      },
+      {
+        "detail": "Object 50: width=6, height=16; threshold=10px.",
+        "path": "Annotations/levle3_22.xml"
+      },
+      {
+        "detail": "Object 53: width=17, height=10; threshold=10px.",
+        "path": "Annotations/levle3_22.xml"
+      },
+      {
+        "detail": "Object 61: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_22.xml"
+      },
+      {
+        "detail": "Object 63: width=11, height=7; threshold=10px.",
+        "path": "Annotations/levle3_22.xml"
+      },
+      {
+        "detail": "Object 65: width=8, height=20; threshold=10px.",
+        "path": "Annotations/levle3_22.xml"
+      },
+      {
+        "detail": "Object 9: width=13, height=9; threshold=10px.",
+        "path": "Annotations/levle3_25.xml"
+      },
+      {
+        "detail": "Object 52: width=22, height=9; threshold=10px.",
+        "path": "Annotations/levle3_25.xml"
+      },
+      {
+        "detail": "Object 9: width=17, height=10; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 11: width=8, height=10; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 16: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 17: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 18: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 19: width=9, height=12; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 20: width=9, height=11; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 22: width=9, height=7; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 23: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 24: width=5, height=7; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 25: width=9, height=11; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 26: width=8, height=11; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 27: width=8, height=7; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 28: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 29: width=7, height=6; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 30: width=12, height=9; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 31: width=15, height=9; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 32: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 34: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 35: width=10, height=14; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 41: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 44: width=9, height=14; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 45: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 46: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 47: width=8, height=11; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 48: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 49: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 51: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 52: width=9, height=11; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 53: width=10, height=12; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 54: width=10, height=7; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 55: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 57: width=8, height=7; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 58: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 59: width=11, height=7; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 60: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 61: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 62: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_26.xml"
+      },
+      {
+        "detail": "Object 3: width=10, height=20; threshold=10px.",
+        "path": "Annotations/levle3_27.xml"
+      },
+      {
+        "detail": "Object 34: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_27.xml"
+      },
+      {
+        "detail": "Object 42: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle3_27.xml"
+      },
+      {
+        "detail": "Object 50: width=8, height=18; threshold=10px.",
+        "path": "Annotations/levle3_27.xml"
+      },
+      {
+        "detail": "Object 53: width=8, height=16; threshold=10px.",
+        "path": "Annotations/levle3_27.xml"
+      },
+      {
+        "detail": "Object 1: width=12, height=9; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 2: width=9, height=13; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 3: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 4: width=8, height=12; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 5: width=10, height=12; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 7: width=9, height=14; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 8: width=14, height=10; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 11: width=5, height=6; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 16: width=9, height=11; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 23: width=19, height=8; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 29: width=19, height=10; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 32: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 33: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 35: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 36: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 38: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 39: width=11, height=8; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 40: width=9, height=7; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 41: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 42: width=7, height=8; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 43: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 44: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 45: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 46: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 50: width=14, height=9; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 51: width=12, height=10; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 52: width=12, height=8; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 53: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 56: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 58: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 59: width=10, height=13; threshold=10px.",
+        "path": "Annotations/levle3_28.xml"
+      },
+      {
+        "detail": "Object 1: width=9, height=13; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 2: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 3: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 4: width=10, height=13; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 7: width=24, height=9; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 10: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 12: width=8, height=16; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 13: width=10, height=15; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 14: width=12, height=10; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 16: width=9, height=16; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 17: width=13, height=8; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 19: width=10, height=13; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 21: width=10, height=14; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 24: width=10, height=12; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 34: width=21, height=10; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 39: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 43: width=8, height=10; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 44: width=7, height=8; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 45: width=8, height=7; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 48: width=12, height=10; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 49: width=10, height=12; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 51: width=13, height=10; threshold=10px.",
+        "path": "Annotations/levle3_29.xml"
+      },
+      {
+        "detail": "Object 6: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 8: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 9: width=9, height=12; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 10: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 11: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 12: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 14: width=14, height=10; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 15: width=6, height=12; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 17: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 19: width=9, height=11; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 21: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 23: width=13, height=10; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 28: width=9, height=12; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 30: width=7, height=12; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 34: width=12, height=9; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 38: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 39: width=11, height=8; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 40: width=9, height=12; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 41: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 42: width=9, height=7; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 43: width=6, height=10; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 44: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 45: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 46: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 47: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 48: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 49: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 50: width=10, height=14; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 51: width=7, height=12; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 52: width=12, height=8; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 53: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 54: width=14, height=10; threshold=10px.",
+        "path": "Annotations/levle3_30.xml"
+      },
+      {
+        "detail": "Object 27: width=12, height=9; threshold=10px.",
+        "path": "Annotations/levle3_31.xml"
+      },
+      {
+        "detail": "Object 1: width=24, height=8; threshold=10px.",
+        "path": "Annotations/levle3_33.xml"
+      },
+      {
+        "detail": "Object 7: width=10, height=20; threshold=10px.",
+        "path": "Annotations/levle3_33.xml"
+      },
+      {
+        "detail": "Object 38: width=17, height=9; threshold=10px.",
+        "path": "Annotations/levle3_33.xml"
+      },
+      {
+        "detail": "Object 11: width=12, height=9; threshold=10px.",
+        "path": "Annotations/levle3_34.xml"
+      },
+      {
+        "detail": "Object 1: width=7, height=8; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 2: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 3: width=8, height=7; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 4: width=7, height=10; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 5: width=13, height=9; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 6: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 7: width=8, height=7; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 8: width=5, height=6; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 10: width=6, height=6; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 11: width=8, height=7; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 12: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 13: width=4, height=7; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 14: width=7, height=7; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 15: width=9, height=7; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 16: width=8, height=5; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 17: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 18: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 19: width=7, height=9; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 20: width=6, height=5; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 21: width=9, height=6; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 22: width=5, height=7; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 23: width=7, height=7; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 24: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 25: width=13, height=9; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 26: width=5, height=9; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 27: width=7, height=11; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 28: width=8, height=10; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 29: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 31: width=8, height=6; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 32: width=6, height=6; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 33: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 34: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 35: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 36: width=8, height=7; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 37: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 39: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 40: width=8, height=12; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 41: width=6, height=8; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 42: width=7, height=8; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 43: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 45: width=7, height=7; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 46: width=7, height=9; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 47: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 48: width=13, height=9; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 49: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 50: width=7, height=6; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 51: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 52: width=6, height=9; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 53: width=8, height=8; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 55: width=7, height=9; threshold=10px.",
+        "path": "Annotations/levle3_37.xml"
+      },
+      {
+        "detail": "Object 23: width=9, height=12; threshold=10px.",
+        "path": "Annotations/levle3_39.xml"
+      },
+      {
+        "detail": "Object 28: width=4, height=7; threshold=10px.",
+        "path": "Annotations/levle3_41.xml"
+      },
+      {
+        "detail": "Object 4: width=13, height=9; threshold=10px.",
+        "path": "Annotations/levle3_45.xml"
+      },
+      {
+        "detail": "Object 7: width=10, height=13; threshold=10px.",
+        "path": "Annotations/levle3_45.xml"
+      },
+      {
+        "detail": "Object 25: width=16, height=9; threshold=10px.",
+        "path": "Annotations/levle3_45.xml"
+      },
+      {
+        "detail": "Object 28: width=10, height=12; threshold=10px.",
+        "path": "Annotations/levle3_45.xml"
+      },
+      {
+        "detail": "Object 33: width=13, height=9; threshold=10px.",
+        "path": "Annotations/levle3_45.xml"
+      },
+      {
+        "detail": "Object 34: width=16, height=10; threshold=10px.",
+        "path": "Annotations/levle3_45.xml"
+      },
+      {
+        "detail": "Object 35: width=14, height=9; threshold=10px.",
+        "path": "Annotations/levle3_45.xml"
+      },
+      {
+        "detail": "Object 40: width=10, height=13; threshold=10px.",
+        "path": "Annotations/levle3_45.xml"
+      },
+      {
+        "detail": "Object 46: width=12, height=9; threshold=10px.",
+        "path": "Annotations/levle3_45.xml"
+      },
+      {
+        "detail": "Object 47: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_45.xml"
+      },
+      {
+        "detail": "Object 48: width=10, height=13; threshold=10px.",
+        "path": "Annotations/levle3_45.xml"
+      },
+      {
+        "detail": "Object 51: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_45.xml"
+      },
+      {
+        "detail": "Object 53: width=8, height=12; threshold=10px.",
+        "path": "Annotations/levle3_45.xml"
+      },
+      {
+        "detail": "Object 1: width=6, height=12; threshold=10px.",
+        "path": "Annotations/levle3_48.xml"
+      },
+      {
+        "detail": "Object 3: width=16, height=10; threshold=10px.",
+        "path": "Annotations/levle3_48.xml"
+      },
+      {
+        "detail": "Object 5: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle3_48.xml"
+      },
+      {
+        "detail": "Object 6: width=7, height=12; threshold=10px.",
+        "path": "Annotations/levle3_48.xml"
+      },
+      {
+        "detail": "Object 9: width=18, height=8; threshold=10px.",
+        "path": "Annotations/levle3_48.xml"
+      },
+      {
+        "detail": "Object 11: width=17, height=8; threshold=10px.",
+        "path": "Annotations/levle3_48.xml"
+      },
+      {
+        "detail": "Object 13: width=8, height=14; threshold=10px.",
+        "path": "Annotations/levle3_48.xml"
+      },
+      {
+        "detail": "Object 21: width=14, height=10; threshold=10px.",
+        "path": "Annotations/levle3_48.xml"
+      },
+      {
+        "detail": "Object 29: width=20, height=6; threshold=10px.",
+        "path": "Annotations/levle3_48.xml"
+      },
+      {
+        "detail": "Object 46: width=14, height=9; threshold=10px.",
+        "path": "Annotations/levle3_48.xml"
+      },
+      {
+        "detail": "Object 48: width=14, height=10; threshold=10px.",
+        "path": "Annotations/levle3_48.xml"
+      },
+      {
+        "detail": "Object 49: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_48.xml"
+      },
+      {
+        "detail": "Object 50: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle3_48.xml"
+      },
+      {
+        "detail": "Object 58: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_48.xml"
+      },
+      {
+        "detail": "Object 2: width=4, height=4; threshold=10px.",
+        "path": "Annotations/levle3_49.xml"
+      },
+      {
+        "detail": "Object 34: width=7, height=7; threshold=10px.",
+        "path": "Annotations/levle3_50.xml"
+      },
+      {
+        "detail": "Object 19: width=9, height=13; threshold=10px.",
+        "path": "Annotations/levle3_56.xml"
+      },
+      {
+        "detail": "Object 23: width=24, height=8; threshold=10px.",
+        "path": "Annotations/levle3_56.xml"
+      },
+      {
+        "detail": "Object 35: width=17, height=8; threshold=10px.",
+        "path": "Annotations/levle3_56.xml"
+      },
+      {
+        "detail": "Object 36: width=15, height=10; threshold=10px.",
+        "path": "Annotations/levle3_56.xml"
+      },
+      {
+        "detail": "Object 51: width=9, height=9; threshold=10px.",
+        "path": "Annotations/levle3_56.xml"
+      },
+      {
+        "detail": "Object 22: width=10, height=12; threshold=10px.",
+        "path": "Annotations/levle3_57.xml"
+      },
+      {
+        "detail": "Object 10: width=4, height=4; threshold=10px.",
+        "path": "Annotations/levle3_59.xml"
+      },
+      {
+        "detail": "Object 33: width=16, height=10; threshold=10px.",
+        "path": "Annotations/levle3_63.xml"
+      },
+      {
+        "detail": "Object 41: width=15, height=8; threshold=10px.",
+        "path": "Annotations/levle3_63.xml"
+      },
+      {
+        "detail": "Object 42: width=18, height=10; threshold=10px.",
+        "path": "Annotations/levle3_63.xml"
+      },
+      {
+        "detail": "Object 26: width=10, height=17; threshold=10px.",
+        "path": "Annotations/levle3_64.xml"
+      },
+      {
+        "detail": "Object 46: width=10, height=18; threshold=10px.",
+        "path": "Annotations/levle3_65.xml"
+      },
+      {
+        "detail": "Object 53: width=7, height=16; threshold=10px.",
+        "path": "Annotations/levle3_65.xml"
+      },
+      {
+        "detail": "Object 58: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_65.xml"
+      },
+      {
+        "detail": "Object 8: width=24, height=8; threshold=10px.",
+        "path": "Annotations/levle3_71.xml"
+      },
+      {
+        "detail": "Object 35: width=4, height=5; threshold=10px.",
+        "path": "Annotations/levle3_71.xml"
+      },
+      {
+        "detail": "Object 33: width=6, height=7; threshold=10px.",
+        "path": "Annotations/levle3_73.xml"
+      },
+      {
+        "detail": "Object 1: width=12, height=9; threshold=10px.",
+        "path": "Annotations/levle3_78.xml"
+      },
+      {
+        "detail": "Object 7: width=9, height=11; threshold=10px.",
+        "path": "Annotations/levle3_78.xml"
+      },
+      {
+        "detail": "Object 8: width=14, height=10; threshold=10px.",
+        "path": "Annotations/levle3_78.xml"
+      },
+      {
+        "detail": "Object 12: width=11, height=8; threshold=10px.",
+        "path": "Annotations/levle3_78.xml"
+      },
+      {
+        "detail": "Object 18: width=12, height=7; threshold=10px.",
+        "path": "Annotations/levle3_78.xml"
+      },
+      {
+        "detail": "Object 38: width=23, height=10; threshold=10px.",
+        "path": "Annotations/levle3_78.xml"
+      },
+      {
+        "detail": "Object 40: width=24, height=8; threshold=10px.",
+        "path": "Annotations/levle3_78.xml"
+      },
+      {
+        "detail": "Object 5: width=12, height=10; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 8: width=12, height=10; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 9: width=9, height=14; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 26: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 28: width=5, height=12; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 33: width=7, height=10; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 35: width=10, height=15; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 40: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 42: width=14, height=10; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 43: width=11, height=8; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 44: width=10, height=7; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 45: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 46: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 47: width=13, height=9; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 48: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 49: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 50: width=8, height=7; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 51: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 55: width=8, height=9; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 56: width=10, height=7; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 58: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 59: width=10, height=13; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 60: width=11, height=8; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 61: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 62: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_84.xml"
+      },
+      {
+        "detail": "Object 44: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_85.xml"
+      },
+      {
+        "detail": "Object 50: width=10, height=12; threshold=10px.",
+        "path": "Annotations/levle3_85.xml"
+      },
+      {
+        "detail": "Object 52: width=21, height=8; threshold=10px.",
+        "path": "Annotations/levle3_85.xml"
+      },
+      {
+        "detail": "Object 58: width=14, height=10; threshold=10px.",
+        "path": "Annotations/levle3_85.xml"
+      },
+      {
+        "detail": "Object 2: width=14, height=9; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 5: width=6, height=6; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 6: width=11, height=9; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 8: width=16, height=10; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 10: width=9, height=11; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 11: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 13: width=10, height=13; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 17: width=10, height=11; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 20: width=14, height=10; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 21: width=10, height=13; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 22: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 29: width=13, height=10; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 32: width=15, height=8; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 38: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 42: width=11, height=10; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 43: width=11, height=7; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 44: width=10, height=7; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 45: width=9, height=10; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 46: width=10, height=9; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 47: width=10, height=10; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 50: width=10, height=8; threshold=10px.",
+        "path": "Annotations/levle3_86.xml"
+      },
+      {
+        "detail": "Object 11: width=6, height=8; threshold=10px.",
+        "path": "Annotations/levle3_87.xml"
+      },
+      {
+        "detail": "Object 28: width=15, height=10; threshold=10px.",
+        "path": "Annotations/levle3_87.xml"
+      },
+      {
+        "detail": "Object 24: width=9, height=8; threshold=10px.",
+        "path": "Annotations/levle3_91.xml"
+      }
+    ]
+  },
+  "image_directory": "../../Classification/JPEGImages",
+  "summary": {
+    "corrupt_images": 0,
+    "duplicate_images": 76,
+    "filename_extension_mismatches": 0,
+    "invalid_annotations": 0,
+    "invalid_bounding_boxes": 0,
+    "missing_images_for_xml": 0,
+    "missing_xml_for_images": 0,
+    "object_class_counts": {
+      "fore": 18983
+    },
+    "total_annotated_objects": 18983,
+    "total_images": 1457,
+    "total_xml_annotations": 1457,
+    "unique_object_classes": [
+      "fore"
+    ],
+    "very_small_bounding_boxes": 833,
+    "very_small_box_definition": "width or height <= 10 pixels"
+  }
+}

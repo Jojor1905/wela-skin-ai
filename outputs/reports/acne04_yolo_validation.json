@@ -1,0 +1,32 @@
+{
+  "converted_objects": 18983,
+  "duplicate_groups_crossing_splits": [],
+  "images": 1457,
+  "issues": [],
+  "object_totals_match": true,
+  "source_objects": 18983,
+  "split_summary": [
+    {
+      "images": 1023,
+      "objects": 13448,
+      "ratio": 0.7021276595744681,
+      "split": "train",
+      "very_small_boxes": 566
+    },
+    {
+      "images": 218,
+      "objects": 2769,
+      "ratio": 0.14962251201098148,
+      "split": "val",
+      "very_small_boxes": 131
+    },
+    {
+      "images": 216,
+      "objects": 2766,
+      "ratio": 0.14824982841455045,
+      "split": "test",
+      "very_small_boxes": 136
+    }
+  ],
+  "valid": true
+}

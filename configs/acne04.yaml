@@ -1,0 +1,7 @@
+# Generated dataset copies use this layout relative to data/processed/acne04_yolo.
+path: .
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: acne_lesion

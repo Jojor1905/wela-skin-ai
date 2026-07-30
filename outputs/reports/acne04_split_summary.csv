@@ -1,0 +1,4 @@
+split,images,image_ratio,target_ratio,objects,very_small_boxes
+train,1023,0.702128,0.700000,13448,566
+val,218,0.149623,0.150000,2769,131
+test,216,0.148250,0.150000,2766,136

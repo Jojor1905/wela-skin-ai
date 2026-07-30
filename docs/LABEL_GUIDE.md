@@ -4,6 +4,16 @@
 
 The initial task contains exactly one object-detection class: `acne_lesion`. This guide must be reviewed and approved against the selected dataset before labels are created, converted, or changed.
 
+## Source Label Mapping Status
+
+- Source label: `fore`
+- Proposed project label: `acne_lesion`
+- Project class: `acne_lesion`
+- YOLO class ID: `0`
+- Status: pending visual verification
+
+This mapping is for the research prototype and is not a medical classification. The source label `fore` has not been medically validated. Do not create acne subtype labels from this dataset.
+
 ## Annotation Rules To Define Before Use
 
 - Lesion inclusion and exclusion criteria:
