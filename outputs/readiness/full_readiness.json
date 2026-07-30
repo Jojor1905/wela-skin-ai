@@ -1,0 +1,1106 @@
+{
+  "absolute_path_findings": [],
+  "conversion_mismatch_count": 0,
+  "conversion_mismatch_image_ids": [],
+  "duplicate_annotation_count_comparisons": [
+    {
+      "duplicate_group_id": "06b2c41628e227aa15415aba6aac881e47eb6c06d74bb9b0b592664e2a81b4a5",
+      "image_ids": [
+        "levle0_131",
+        "levle0_24"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle0_131": [
+          3112,
+          3456
+        ],
+        "levle0_24": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle0_131": 2,
+        "levle0_24": 3
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle0_131": [
+          3112,
+          3456
+        ],
+        "levle0_24": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "train"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "0831ea7a4bc5e0477d5b41eec0553130c4811d8eebb93fc2eb0ce584a7c4a963",
+      "image_ids": [
+        "levle0_120",
+        "levle1_486"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle0_120": [
+          3112,
+          3456
+        ],
+        "levle1_486": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle0_120": 4,
+        "levle1_486": 8
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle0_120": [
+          3112,
+          3456
+        ],
+        "levle1_486": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "train"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "188f8fbae3b30080927c37f44890906e211578ec177ea2a3b021a166b252b09a",
+      "image_ids": [
+        "levle1_23",
+        "levle2_153"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle1_23": [
+          3112,
+          3456
+        ],
+        "levle2_153": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle1_23": 9,
+        "levle2_153": 24
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle1_23": [
+          3112,
+          3456
+        ],
+        "levle2_153": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "test"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "2666ed0601e6579477889e5671972520bf5bd766ed6ac383d51c44107f46606a",
+      "image_ids": [
+        "levle1_572",
+        "levle1_574"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle1_572": [
+          3112,
+          3456
+        ],
+        "levle1_574": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle1_572": 11,
+        "levle1_574": 7
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle1_572": [
+          3112,
+          3456
+        ],
+        "levle1_574": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "train"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "2ccdae05d565fc9ef819d95265797441846727b73804094323902594a9ceadd2",
+      "image_ids": [
+        "levle0_42",
+        "levle0_94"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle0_42": [
+          3112,
+          3456
+        ],
+        "levle0_94": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle0_42": 2,
+        "levle0_94": 1
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle0_42": [
+          3112,
+          3456
+        ],
+        "levle0_94": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "train"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "3fcb0f1627c6ad98df131b8f9c7ae10e9ba5d0e9599cf525ec54ce072ebcbfe5",
+      "image_ids": [
+        "levle1_20",
+        "levle2_151"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle1_20": [
+          3112,
+          3456
+        ],
+        "levle2_151": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle1_20": 8,
+        "levle2_151": 24
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle1_20": [
+          3112,
+          3456
+        ],
+        "levle2_151": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "train"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "46417b44b16e0aac18cf592947a2d6e2f6f4ea48bd5b1bf6c8b4893c0fab7533",
+      "image_ids": [
+        "levle2_70",
+        "levle2_96"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle2_70": [
+          3112,
+          3456
+        ],
+        "levle2_96": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle2_70": 30,
+        "levle2_96": 22
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle2_70": [
+          3112,
+          3456
+        ],
+        "levle2_96": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "train"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "56f232f4433dd59a75104e2370b6d2367444046a071b10cee66b1da17bf7862e",
+      "image_ids": [
+        "levle1_145",
+        "levle1_281"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle1_145": [
+          3112,
+          3456
+        ],
+        "levle1_281": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle1_145": 7,
+        "levle1_281": 9
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle1_145": [
+          3112,
+          3456
+        ],
+        "levle1_281": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "val"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "5b605bc92fcd022a9193bbdf5c9e0ac18bce8da4e29df9a6731b1bb46dcd1eea",
+      "image_ids": [
+        "levle1_16",
+        "levle2_150"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle1_16": [
+          3112,
+          3456
+        ],
+        "levle2_150": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle1_16": 9,
+        "levle2_150": 21
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle1_16": [
+          3112,
+          3456
+        ],
+        "levle2_150": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "val"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "611532acc5ec2bf348ef5c4188532e15c8de490178c8b33cdc8fc972d2fb64d3",
+      "image_ids": [
+        "levle1_136",
+        "levle1_54"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle1_136": [
+          3112,
+          3456
+        ],
+        "levle1_54": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle1_136": 7,
+        "levle1_54": 9
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle1_136": [
+          3112,
+          3456
+        ],
+        "levle1_54": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "train"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "6bbc2d30d4bb10853d24f732a29fe7cba57df0628ce087cc02a9b3ddce8dc485",
+      "image_ids": [
+        "levle1_573",
+        "levle1_575"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle1_573": [
+          3112,
+          3456
+        ],
+        "levle1_575": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle1_573": 16,
+        "levle1_575": 15
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle1_573": [
+          3112,
+          3456
+        ],
+        "levle1_575": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "train"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "6dab728e8bfca66d940a03e8f880b31598ca6b0fa8d16bca7b766a03953e0fa4",
+      "image_ids": [
+        "levle1_135",
+        "levle1_209"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle1_135": [
+          3112,
+          3456
+        ],
+        "levle1_209": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle1_135": 7,
+        "levle1_209": 6
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle1_135": [
+          3112,
+          3456
+        ],
+        "levle1_209": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "train"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "828240b5dd6441a5b7e339b1c4257725175f9d1b6ec01d90a000bbfec1d16be5",
+      "image_ids": [
+        "levle0_121",
+        "levle1_504"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle0_121": [
+          3112,
+          3456
+        ],
+        "levle1_504": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle0_121": 5,
+        "levle1_504": 7
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle0_121": [
+          3112,
+          3456
+        ],
+        "levle1_504": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "train"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "85ea30ada51213b9e42f13611eb085c8a0be1b7e8d68861a2a73fa0cf7839ed6",
+      "image_ids": [
+        "levle1_166",
+        "levle1_292"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle1_166": [
+          3112,
+          3456
+        ],
+        "levle1_292": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle1_166": 7,
+        "levle1_292": 10
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle1_166": [
+          3112,
+          3456
+        ],
+        "levle1_292": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "train"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "8e219a67bbef8530223502453b2c1924b89b56e8ca09e6b84120a84354bb8615",
+      "image_ids": [
+        "levle0_172",
+        "levle1_283"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle0_172": [
+          3112,
+          3456
+        ],
+        "levle1_283": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle0_172": 4,
+        "levle1_283": 11
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle0_172": [
+          3112,
+          3456
+        ],
+        "levle1_283": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "train"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "9d1adbdaf1926dc91901a53e69f56be19045ea7f3f36f557244a7f0367f833d9",
+      "image_ids": [
+        "levle0_185",
+        "levle1_286"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle0_185": [
+          3112,
+          3456
+        ],
+        "levle1_286": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle0_185": 3,
+        "levle1_286": 7
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle0_185": [
+          3112,
+          3456
+        ],
+        "levle1_286": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "train"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "a83e345a1b8432e7a4b192ecd8df57d898430f57f7b03aad8c115d719a362bef",
+      "image_ids": [
+        "levle1_164",
+        "levle1_291"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle1_164": [
+          3112,
+          3456
+        ],
+        "levle1_291": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle1_164": 7,
+        "levle1_291": 9
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle1_164": [
+          3112,
+          3456
+        ],
+        "levle1_291": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "train"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "acf8394dd155c64512e3cf445577307615150567a0b42bfa0ec26c5e770963a6",
+      "image_ids": [
+        "levle3_109",
+        "levle3_140"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle3_109": [
+          216,
+          233
+        ],
+        "levle3_140": [
+          216,
+          233
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle3_109": 52,
+        "levle3_140": 54
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle3_109": [
+          216,
+          233
+        ],
+        "levle3_140": [
+          216,
+          233
+        ]
+      },
+      "splits": [
+        "test"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "af66359e36acb57b34e05a2afdcecc11f2e79d77d86da66bae0197b7875c5971",
+      "image_ids": [
+        "levle1_610",
+        "levle1_611"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle1_610": [
+          3112,
+          3456
+        ],
+        "levle1_611": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle1_610": 9,
+        "levle1_611": 11
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle1_610": [
+          3112,
+          3456
+        ],
+        "levle1_611": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "val"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "b257a192234a349684044c442598529d18dcd6830961450fd72620606f967045",
+      "image_ids": [
+        "levle0_117",
+        "levle0_207"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle0_117": [
+          3112,
+          3456
+        ],
+        "levle0_207": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle0_117": 2,
+        "levle0_207": 1
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle0_117": [
+          3112,
+          3456
+        ],
+        "levle0_207": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "val"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "b25d783297ecffaacce4206049d1c91c1be56df59a47008f6cb95fb46dbb497b",
+      "image_ids": [
+        "levle1_138",
+        "levle1_460"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle1_138": [
+          3112,
+          3456
+        ],
+        "levle1_460": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle1_138": 8,
+        "levle1_460": 9
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle1_138": [
+          3112,
+          3456
+        ],
+        "levle1_460": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "val"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "b538b91a3834cc61f2bae23436e14c79dc7695f268b9faed486bcafca0ba87fe",
+      "image_ids": [
+        "levle1_131",
+        "levle2_128"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle1_131": [
+          3112,
+          3456
+        ],
+        "levle2_128": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle1_131": 11,
+        "levle2_128": 14
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle1_131": [
+          3112,
+          3456
+        ],
+        "levle2_128": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "train"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "bee48890973035c00481b8ccb33e15b76b0d0d9ba2599e86c0b4f1af3fbeaf65",
+      "image_ids": [
+        "levle1_133",
+        "levle1_503"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle1_133": [
+          3112,
+          3456
+        ],
+        "levle1_503": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle1_133": 9,
+        "levle1_503": 8
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle1_133": [
+          3112,
+          3456
+        ],
+        "levle1_503": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "train"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "c0a65e9715c24491a9cf3bbadbf88e06ebe4e5040ebaffdf9d70f997995c7933",
+      "image_ids": [
+        "levle1_161",
+        "levle1_288"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle1_161": [
+          3112,
+          3456
+        ],
+        "levle1_288": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle1_161": 8,
+        "levle1_288": 11
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle1_161": [
+          3112,
+          3456
+        ],
+        "levle1_288": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "train"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "e5927997a3ff6d90155559c5ef3d7bca1eeb6c7b10fef464dbf1a3b8694893c6",
+      "image_ids": [
+        "levle1_140",
+        "levle1_358"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle1_140": [
+          3112,
+          3456
+        ],
+        "levle1_358": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle1_140": 9,
+        "levle1_358": 6
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle1_140": [
+          3112,
+          3456
+        ],
+        "levle1_358": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "val"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "e6f1ca9fee7ba325b431b4d8b9479f5ffe08614b6e9ddefa7e11d3f0401aa1f7",
+      "image_ids": [
+        "levle1_22",
+        "levle2_152"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle1_22": [
+          3112,
+          3456
+        ],
+        "levle2_152": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle1_22": 7,
+        "levle2_152": 22
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle1_22": [
+          3112,
+          3456
+        ],
+        "levle2_152": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "train"
+      ],
+      "xml_dimensions_consistent": true
+    },
+    {
+      "duplicate_group_id": "fb7acfc404266134438b0e34714416700ae62d723b62e887df9c5ab899f42042",
+      "image_ids": [
+        "levle2_72",
+        "levle2_97"
+      ],
+      "remains_in_one_split": true,
+      "source_image_dimensions": {
+        "levle2_72": [
+          3112,
+          3456
+        ],
+        "levle2_97": [
+          3112,
+          3456
+        ]
+      },
+      "source_image_dimensions_consistent": true,
+      "source_object_counts": {
+        "levle2_72": 25,
+        "levle2_97": 24
+      },
+      "source_xml_annotations_identical": false,
+      "source_xml_dimensions": {
+        "levle2_72": [
+          3112,
+          3456
+        ],
+        "levle2_97": [
+          3112,
+          3456
+        ]
+      },
+      "splits": [
+        "train"
+      ],
+      "xml_dimensions_consistent": true
+    }
+  ],
+  "duplicate_annotation_review": {
+    "all_conversion_integrity_valid": true,
+    "all_groups_single_split": true,
+    "groups": 27,
+    "images": 54
+  },
+  "duplicate_groups_crossing_splits": [],
+  "duplicate_groups_with_annotation_count_differences": [
+    "06b2c41628e227aa15415aba6aac881e47eb6c06d74bb9b0b592664e2a81b4a5",
+    "0831ea7a4bc5e0477d5b41eec0553130c4811d8eebb93fc2eb0ce584a7c4a963",
+    "188f8fbae3b30080927c37f44890906e211578ec177ea2a3b021a166b252b09a",
+    "2666ed0601e6579477889e5671972520bf5bd766ed6ac383d51c44107f46606a",
+    "2ccdae05d565fc9ef819d95265797441846727b73804094323902594a9ceadd2",
+    "3fcb0f1627c6ad98df131b8f9c7ae10e9ba5d0e9599cf525ec54ce072ebcbfe5",
+    "46417b44b16e0aac18cf592947a2d6e2f6f4ea48bd5b1bf6c8b4893c0fab7533",
+    "56f232f4433dd59a75104e2370b6d2367444046a071b10cee66b1da17bf7862e",
+    "5b605bc92fcd022a9193bbdf5c9e0ac18bce8da4e29df9a6731b1bb46dcd1eea",
+    "611532acc5ec2bf348ef5c4188532e15c8de490178c8b33cdc8fc972d2fb64d3",
+    "6bbc2d30d4bb10853d24f732a29fe7cba57df0628ce087cc02a9b3ddce8dc485",
+    "6dab728e8bfca66d940a03e8f880b31598ca6b0fa8d16bca7b766a03953e0fa4",
+    "828240b5dd6441a5b7e339b1c4257725175f9d1b6ec01d90a000bbfec1d16be5",
+    "85ea30ada51213b9e42f13611eb085c8a0be1b7e8d68861a2a73fa0cf7839ed6",
+    "8e219a67bbef8530223502453b2c1924b89b56e8ca09e6b84120a84354bb8615",
+    "9d1adbdaf1926dc91901a53e69f56be19045ea7f3f36f557244a7f0367f833d9",
+    "a83e345a1b8432e7a4b192ecd8df57d898430f57f7b03aad8c115d719a362bef",
+    "acf8394dd155c64512e3cf445577307615150567a0b42bfa0ec26c5e770963a6",
+    "af66359e36acb57b34e05a2afdcecc11f2e79d77d86da66bae0197b7875c5971",
+    "b257a192234a349684044c442598529d18dcd6830961450fd72620606f967045",
+    "b25d783297ecffaacce4206049d1c91c1be56df59a47008f6cb95fb46dbb497b",
+    "b538b91a3834cc61f2bae23436e14c79dc7695f268b9faed486bcafca0ba87fe",
+    "bee48890973035c00481b8ccb33e15b76b0d0d9ba2599e86c0b4f1af3fbeaf65",
+    "c0a65e9715c24491a9cf3bbadbf88e06ebe4e5040ebaffdf9d70f997995c7933",
+    "e5927997a3ff6d90155559c5ef3d7bca1eeb6c7b10fef464dbf1a3b8694893c6",
+    "e6f1ca9fee7ba325b431b4d8b9479f5ffe08614b6e9ddefa7e11d3f0401aa1f7",
+    "fb7acfc404266134438b0e34714416700ae62d723b62e887df9c5ab899f42042"
+  ],
+  "duplicate_hash_groups": 38,
+  "expected_images": 1457,
+  "expected_objects": 18983,
+  "filenames_in_multiple_splits": [],
+  "images_checked": 1457,
+  "missing_or_unreadable_source_hashes": [],
+  "needs_review_categories": {
+    "duplicate_annotation_count_difference": 54,
+    "very_small_box_only": 86
+  },
+  "needs_review_reason_breakdown": {
+    "contains_very_small_box": 88,
+    "duplicate_group_annotation_counts_differ": 54
+  },
+  "objects_checked": 18983,
+  "scope": "Conversion-integrity review only; no medical or dermatological judgement is made.",
+  "source_objects_checked": 18983,
+  "split_image_counts": {
+    "test": 216,
+    "train": 1023,
+    "val": 218
+  },
+  "split_object_counts": {
+    "test": 2766,
+    "train": 13448,
+    "val": 2769
+  },
+  "split_source_object_counts": {
+    "test": 2766,
+    "train": 13448,
+    "val": 2769
+  },
+  "status_counts": {
+    "NEEDS_REVIEW": 140,
+    "PASS": 1317,
+    "REJECT": 0
+  }
+}

@@ -2,26 +2,33 @@
 
 ## Scope
 
-The initial task contains exactly one object-detection class: `acne_lesion`. This guide must be reviewed and approved against the selected dataset before labels are created, converted, or changed.
+The academic feasibility prototype has one object-detection class: `acne_lesion`. It is not a medical device, clinical diagnosis, severity-grade system, or face-recognition system.
 
-## Source Label Mapping Status
+## Verified Source-to-Project Mapping
 
-- Source label: `fore`
-- Proposed project label: `acne_lesion`
-- Project class: `acne_lesion`
-- YOLO class ID: `0`
-- Status: pending visual verification
+| Field | Value |
+| --- | --- |
+| Source label | `fore` |
+| Source label count | One unique object class |
+| Source annotated objects | 18,983 |
+| Project label | `acne_lesion` |
+| YOLO class ID | `0` |
+| Mapping status | Verified for academic object-detection prototype use. |
 
-This mapping is for the research prototype and is not a medical classification. The source label `fore` has not been medically validated. Do not create acne subtype labels from this dataset.
+Verification basis:
 
-## Annotation Rules To Define Before Use
+- The local Pascal VOC annotations contain only the source label `fore`.
+- The source dataset is documented as an acne image grading and lesion-counting dataset.
+- Bounding boxes represent the source dataset’s local lesion annotations.
+- `acne_lesion` is a project-level semantic normalisation for object-detection and user-interface wording.
 
-- Lesion inclusion and exclusion criteria:
-- Bounding-box placement convention:
-- Occlusion, blur, lighting, and makeup handling:
-- Ambiguous-case review process:
-- Annotator training and agreement checks:
+This mapping is not an acne subtype, clinical diagnosis, severity grade, or dermatologist-verified medical classification. It does not establish medical accuracy. Do not rename or modify the original XML annotations.
 
 ## YOLO Representation
 
-Use class ID `0` for `acne_lesion` only after the dataset audit confirms this mapping. A YOLO label row uses `class_id x_center y_center width height`, with coordinates normalized to the image dimensions. Do not fabricate labels or convert annotations until the source schema and approved rules are documented.
+Each converted row uses `0 x_center y_center width height`, with normalized coordinates. The conversion integrity review verified all 18,983 source objects against their converted YOLO boxes without clamping or repair.
+
+## Limits for Review
+
+- Very small boxes and differing source annotations on duplicate image files remain documented dataset limitations.
+- The mapping supports this local academic prototype only; it does not authorise clinical claims or uses outside the documented dataset permission.

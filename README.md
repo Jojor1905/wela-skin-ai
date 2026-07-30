@@ -65,3 +65,34 @@ The generated previews and CSV worksheets remain local, and support human review
 ## YOLO Conversion and Validation
 
 After approval of the `fore` to `acne_lesion` research-prototype mapping, use the commands in [CONVERSION_GUIDE.md](docs/CONVERSION_GUIDE.md). Conversion copies local source images into the ignored `data/processed/` directory, creates duplicate-aware deterministic splits, and must be followed by validation. It does not train a model.
+
+## Automated YOLO Preview Review
+
+Run the read-only conversion-integrity review after rendering YOLO previews:
+
+```bash
+python src/automated_preview_review.py \
+  --source-annotations data/raw/acne04/Detection/VOC2007/Annotations \
+  --source-images data/raw/acne04/Classification/JPEGImages \
+  --yolo-dataset data/processed/acne04_yolo \
+  --preview-index outputs/yolo_previews/yolo_preview_index.csv \
+  --split-manifest data/processed/acne04_yolo/split_manifest.csv \
+  --output-dir outputs/yolo_previews
+```
+
+It compares source Pascal VOC boxes with reconstructed YOLO boxes and writes local review worksheets. It checks conversion integrity and split metadata only; it does not assess medical label accuracy, alter source or converted data, or train a model.
+
+## Full Dataset Readiness Check
+
+Run the complete read-only integrity check across every source XML/image and converted YOLO pair:
+
+```bash
+python src/full_dataset_readiness_check.py \
+  --source-annotations data/raw/acne04/Detection/VOC2007/Annotations \
+  --source-images data/raw/acne04/Classification/JPEGImages \
+  --yolo-dataset data/processed/acne04_yolo \
+  --split-manifest data/processed/acne04_yolo/split_manifest.csv \
+  --output-dir outputs/readiness
+```
+
+It confirms conversion and split integrity, including duplicate hashes, without changing source or converted data. It is not clinical label validation and does not train a model.

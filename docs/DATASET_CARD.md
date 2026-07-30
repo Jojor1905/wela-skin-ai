@@ -1,36 +1,36 @@
-# Dataset Card
+# Dataset Card: ACNE04
 
 ## Identification
 
-- Dataset name:
-- Version and source URL:
-- Maintainer or publisher:
-- Access date:
+- Dataset name: ACNE04.
+- Official source: https://github.com/xpwu95/LDL
+- Source work: *Joint Acne Image Grading and Counting via Label Distribution Learning*.
+- Access date: 2026-07-30.
 
 ## Purpose and Intended Use
 
-- Original dataset purpose:
-- Permitted use for this research prototype: Academic feasibility prototype for visible-lesion object detection only; not a medical device, diagnostic system, or face-recognition system.
-- Prohibited or restricted uses:
+- Intended use in this repository: local academic feasibility prototype.
+- Current task: one-class visible acne-lesion object detection using project class `acne_lesion` (YOLO ID `0`).
+- Not intended for diagnosis, medical treatment, clinical decision-making, or production deployment.
+- The prototype does not perform face recognition, identity matching, or identity inference.
 
 ## Data Description
 
-- Number of images and subjects: 1,457 source images. Verified subject identifiers are unavailable, so the subject count and person-level separation cannot be guaranteed.
-- Image sources and collection context:
-- Available demographics and representation limits:
-- Subject identifiers available for splitting: yes/no; details:
+- Source images and annotations: 1,457 images and 18,983 source objects.
+- Converted structure: `data/processed/acne04_yolo/` contains copied images, YOLO labels, a class map, and a split manifest; it does not modify source data.
+- Deterministic split: seed 42; train 1,023 images / 13,448 objects, validation 218 / 2,769, test 216 / 2,766.
+- Verified subject identifiers are unavailable. Person-level separation therefore cannot be guaranteed.
 
-## Privacy and Governance
+## Privacy, Permission, and Storage
 
-- Consent, de-identification, and privacy notes:
-- Storage location and access controls:
-- Known risks:
+- The available source statement supports academic use. It does not explicitly authorise public redistribution, commercial use, or external-cloud upload.
+- Keep the dataset local to authorised storage. The dataset must not be published in this repository.
+- Request author clarification before uploading images or processed copies to Kaggle or another external cloud service. See `docs/LICENSE_LOG.md` and `docs/ACNE04_PERMISSION_REQUEST.md`.
 
 ## Quality and Limitations
 
-- Annotation source and quality checks:
-- Converted dataset structure: `data/processed/acne04_yolo/` contains copied images and YOLO labels in train, validation, and test directories, plus a class map and split manifest. It contains no source-data modifications.
-- Deterministic split: seed 42; target ratios train 70%, validation 15%, test 15%; known SHA-256 duplicate groups are kept within one split.
-- Split counts: train 1,023 images / 13,448 objects / 566 very small boxes; validation 218 images / 2,769 objects / 131 very small boxes; test 216 images / 2,766 objects / 136 very small boxes. See `outputs/reports/acne04_split_summary.csv`.
-- Known biases, gaps, and failure modes: Person-level separation cannot be guaranteed because verified subject IDs are unavailable. Results may not generalise to mobile selfies, Thai users, or other populations and capture conditions; this is a known domain gap, not a measured performance claim.
-- Review date and reviewer:
+- Technical conversion integrity review: 1,457 images and 18,983 objects were verified; no conversion mismatch, rejected image, or duplicate split crossing was found.
+- Very small lesions/boxes remain a documented limitation.
+- Some identical duplicate image files have inconsistent source annotations. Those annotation differences originate in the source XML and are preserved per image in conversion; they are not a conversion failure.
+- No validated Thai or mobile-selfie external test set is available. Generalisation to Thai users, mobile selfies, or other populations and capture conditions has not been established.
+- This dataset card does not make medical, dermatological, or performance claims.
