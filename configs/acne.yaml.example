@@ -1,0 +1,8 @@
+# Example only. Copy to an ignored local configuration after data governance review.
+# Do not add dataset paths, image counts, or class details until audited.
+path: /absolute/path/to/local/dataset
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: acne_lesion

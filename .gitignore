@@ -1,0 +1,26 @@
+# Local datasets and annotations (may contain sensitive facial data)
+data/raw/
+data/interim/
+data/processed/
+
+# Generated training and inference artifacts
+outputs/models/
+runs/
+*.pt
+*.onnx
+*.engine
+
+# Credentials and local environments
+.env
+.env.local
+kaggle.json
+.venv/
+
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+._*

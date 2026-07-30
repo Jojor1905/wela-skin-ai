@@ -1,0 +1,3 @@
+# Dependencies are intentionally not selected or installed yet.
+# Pin exact versions here only after the first dataset audit establishes the
+# required formats, licensing constraints, and reproducibility needs.
