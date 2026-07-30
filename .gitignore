@@ -24,3 +24,10 @@ __pycache__/
 # macOS
 .DS_Store
 ._*
+
+# Local model training outputs
+outputs/experiments/
+runs/
+*.pt
+*.onnx
+*.engine
