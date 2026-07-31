@@ -11,8 +11,8 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from train_local_pilot import (  # noqa: E402
-    DatasetPaths, ensure_mps, parse_pilot_yaml, repository_root, resolve_dataset_paths,
-    unique_run_name, write_runtime_yaml,
+    DatasetPaths, ensure_mps, parse_args, parse_pilot_yaml, repository_root,
+    resolve_dataset_paths, unique_run_name, write_runtime_yaml,
 )
 
 
@@ -96,6 +96,29 @@ class LocalPilotTests(unittest.TestCase):
         with patch.dict(sys.modules, {"torch": fake_torch}):
             with self.assertRaisesRegex(RuntimeError, "No CPU fallback"):
                 ensure_mps("mps")
+
+    def test_new_training_arguments_are_parsed(self) -> None:
+        with patch.object(
+            sys,
+            "argv",
+            [
+                "train_local_pilot.py",
+                "--patience", "8",
+                "--cache",
+                "--pretrained",
+            ],
+        ):
+            arguments = parse_args()
+        self.assertEqual(arguments.patience, 8)
+        self.assertTrue(arguments.cache)
+        self.assertTrue(arguments.pretrained)
+
+    def test_new_training_argument_defaults_are_safe_for_smoke_tests(self) -> None:
+        with patch.object(sys, "argv", ["train_local_pilot.py"]):
+            arguments = parse_args()
+        self.assertEqual(arguments.patience, 3)
+        self.assertFalse(arguments.cache)
+        self.assertTrue(arguments.pretrained)
 
     def _make_dataset(self, root: Path) -> DatasetPaths:
         dataset = (root / "data" / "dataset").resolve()

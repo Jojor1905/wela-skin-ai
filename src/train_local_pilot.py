@@ -47,6 +47,19 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--project", type=Path, default=DEFAULT_PROJECT)
     parser.add_argument("--run-name", default="local_pilot_smoke")
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--patience", type=int, default=3)
+    parser.add_argument(
+        "--cache",
+        action=argparse.BooleanOptionalAction,
+        default=False,
+        help="Cache images for training (disabled by default).",
+    )
+    parser.add_argument(
+        "--pretrained",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Use the supplied model weights as pretrained weights (default: enabled).",
+    )
     return parser.parse_args()
 
 
@@ -213,13 +226,26 @@ def write_summary(run_dir: Path, settings: argparse.Namespace, elapsed_seconds: 
         raise RuntimeError("Training output is incomplete: results.csv has no epoch records.")
     best_row = max(rows, key=lambda row: metric_value(row, ("metrics/mAP50-95(B)", "metrics/mAP50-95")) or float("-inf"))
     summary = {
-        "model": settings.model, "epochs": settings.epochs, "image_size": settings.imgsz,
-        "batch_size": settings.batch, "device": settings.device, "elapsed_time_seconds": round(elapsed_seconds, 3),
+        "data": str(settings.data),
+        "model": settings.model,
+        "epochs": settings.epochs,
+        "image_size": settings.imgsz,
+        "batch_size": settings.batch,
+        "workers": settings.workers,
+        "device": settings.device,
+        "project": str(settings.project),
+        "run_name": settings.run_name,
+        "seed": settings.seed,
+        "patience": settings.patience,
+        "cache": settings.cache,
+        "pretrained": settings.pretrained,
+        "elapsed_time_seconds": round(elapsed_seconds, 3),
         "best_validation_precision": metric_value(best_row, ("metrics/precision(B)", "metrics/precision")),
         "best_validation_recall": metric_value(best_row, ("metrics/recall(B)", "metrics/recall")),
         "best_validation_mAP50": metric_value(best_row, ("metrics/mAP50(B)", "metrics/mAP50")),
         "best_validation_mAP50_95": metric_value(best_row, ("metrics/mAP50-95(B)", "metrics/mAP50-95")),
         "output_directory": str(run_dir),
+        "actual_run_name": run_dir.name,
     }
     (run_dir / "local_pilot_summary.json").write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     return summary
@@ -234,8 +260,14 @@ def train(settings: argparse.Namespace) -> dict[str, Any]:
     paths = resolve_dataset_paths(root, pilot_yaml)
     runtime_yaml = write_runtime_yaml(root, paths)
     print_dataset_preflight(paths, runtime_yaml)
-    if settings.epochs <= 0 or settings.imgsz <= 0 or settings.batch <= 0 or settings.workers < 0:
-        raise ValueError("epochs, imgsz, and batch must be positive; workers must be non-negative.")
+    if (
+        settings.epochs <= 0
+        or settings.imgsz <= 0
+        or settings.batch <= 0
+        or settings.workers < 0
+        or settings.patience < 0
+    ):
+        raise ValueError("epochs, imgsz, and batch must be positive; workers and patience must be non-negative.")
     ensure_mps(settings.device)
     model_path = resolve_model(root, settings.model)
     project = resolve_project(root, settings.project)
@@ -251,7 +283,8 @@ def train(settings: argparse.Namespace) -> dict[str, Any]:
         model.train(
             data=str(runtime_yaml), epochs=settings.epochs, imgsz=settings.imgsz, batch=settings.batch,
             workers=settings.workers, device=settings.device, project=str(project), name=run_name,
-            seed=settings.seed, patience=3, cache=False, pretrained=True, val=True, deterministic=True,
+            seed=settings.seed, patience=settings.patience, cache=settings.cache,
+            pretrained=settings.pretrained, val=True, deterministic=True,
         )
         elapsed = time.monotonic() - started
     except RuntimeError as error:
