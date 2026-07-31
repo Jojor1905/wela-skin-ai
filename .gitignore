@@ -34,3 +34,6 @@ runs/
 
 # Generated runtime configuration
 outputs/runtime/
+
+# Generated locked-test artifacts
+outputs/locked_test/
