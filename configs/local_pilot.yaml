@@ -1,0 +1,6 @@
+# Local-only ACNE04 pilot. Deliberately omits a test split.
+path: data/processed/acne04_yolo
+train: images/train
+val: images/val
+names:
+  0: acne_lesion

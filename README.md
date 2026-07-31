@@ -96,3 +96,7 @@ python src/full_dataset_readiness_check.py \
 ```
 
 It confirms conversion and split integrity, including duplicate hashes, without changing source or converted data. It is not clinical label validation and does not train a model.
+
+## Local Apple Silicon Pilot
+
+The guarded local MPS pilot workflow is documented in [LOCAL_PILOT_GUIDE.md](docs/LOCAL_PILOT_GUIDE.md). It deliberately uses only training and validation data, keeps artifacts under ignored `outputs/experiments/`, and must not be used for external-cloud training without explicit permission.

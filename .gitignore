@@ -31,3 +31,6 @@ runs/
 *.pt
 *.onnx
 *.engine
+
+# Generated runtime configuration
+outputs/runtime/

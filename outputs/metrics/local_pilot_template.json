@@ -1,0 +1,14 @@
+{
+  "model": "yolo26n.pt",
+  "epochs": null,
+  "image_size": null,
+  "batch_size": null,
+  "device": null,
+  "elapsed_time_seconds": null,
+  "best_validation_precision": null,
+  "best_validation_recall": null,
+  "best_validation_mAP50": null,
+  "best_validation_mAP50_95": null,
+  "output_directory": null,
+  "status": "template_only_no_training_has_run"
+}
