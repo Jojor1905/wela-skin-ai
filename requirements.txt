@@ -1,3 +1,6 @@
-# Dependencies are intentionally not selected or installed yet.
-# Pin exact versions here only after the first dataset audit establishes the
-# required formats, licensing constraints, and reproducibility needs.
+fastapi==0.115.14
+pillow==12.3.0
+pydantic==2.11.7
+python-multipart==0.0.20
+ultralytics==8.4.112
+uvicorn==0.35.0

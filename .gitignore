@@ -13,8 +13,12 @@ runs/
 # Credentials and local environments
 .env
 .env.local
+.env.*
+!.env.example
 kaggle.json
 .venv/
+venv/
+env/
 
 # Python and notebook caches
 __pycache__/
@@ -32,8 +36,21 @@ runs/
 *.onnx
 *.engine
 
+# Required deployment model (all other weight files remain ignored)
+!models/acne-yolo-best.pt
+
 # Generated runtime configuration
 outputs/runtime/
 
 # Generated locked-test artifacts
 outputs/locked_test/
+
+# Generated predictions, runtime uploads, temporary images, and reports
+outputs/predictions/
+outputs/uploads/
+uploads/
+tmp/
+temp/
+*.tmp
+*.temp
+outputs/reports/

@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: wela-skin-ai-api
+    runtime: python
+    plan: free
+    buildCommand: python -m pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: uvicorn src.api.app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.15
+      - key: MODEL_PATH
+        value: models/acne-yolo-best.pt
+      - key: YOLO_DEVICE
+        value: cpu
+      - key: ALLOWED_ORIGINS
+        value: https://wela-liff-prototype.vercel.app,http://localhost:3000,http://localhost:3001
+      - key: LOG_LEVEL
+        value: INFO

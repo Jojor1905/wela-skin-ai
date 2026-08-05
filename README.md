@@ -31,7 +31,7 @@ Place authorised data only on the local machine under `data/raw/`; derived files
 
 ## Current Status
 
-No dataset has been downloaded, no dependencies have been installed, and no model has been trained. The next manual action is to identify an appropriate dataset and complete `docs/LICENSE_LOG.md` and `docs/DATASET_CARD.md` before placing any authorised data locally.
+The repository contains the existing `models/acne-yolo-best.pt` weights for academic-prototype inference. This deployment work does not retrain the model or change weights, datasets, annotations, splits, or evaluation results. Dataset provenance and limitations remain documented in `docs/DATASET_CARD.md` and `docs/LICENSE_LOG.md`.
 
 ## Dataset Audit
 
@@ -100,3 +100,51 @@ It confirms conversion and split integrity, including duplicate hashes, without 
 ## Local Apple Silicon Pilot
 
 The guarded local MPS pilot workflow is documented in [LOCAL_PILOT_GUIDE.md](docs/LOCAL_PILOT_GUIDE.md). It deliberately uses only training and validation data, keeps artifacts under ignored `outputs/experiments/`, and must not be used for external-cloud training without explicit permission.
+
+## Local Prototype API
+
+The local FastAPI inference service and exact installation, run, curl, unit-test, and import-check commands are documented in [LOCAL_API_GUIDE.md](docs/LOCAL_API_GUIDE.md). It loads the existing one-class model once, does not retain uploaded images by default, and returns non-medical UI-prototype output only.
+
+Install the API dependencies and start it from the repository root:
+
+```bash
+python -m pip install -r requirements.txt
+uvicorn src.api.app:app --reload --host 127.0.0.1 --port 8000
+```
+
+The API decodes each uploaded JPEG, PNG, or WEBP image in memory, runs inference on that request's image, and closes it after inference. It does not permanently save uploaded user images. Logs contain a request ID, byte count, short SHA-256 prefix, dimensions, and detection counts; they do not contain image data or complete hashes.
+
+## Render Web Service
+
+The root `render.yaml` defines the public Python Web Service. Its commands are:
+
+```text
+Build: python -m pip install --upgrade pip && pip install -r requirements.txt
+Start: uvicorn src.api.app:app --host 0.0.0.0 --port $PORT
+```
+
+Configure these non-secret environment variables (the same values are declared in `render.yaml`):
+
+| Variable | Value | Purpose |
+| --- | --- | --- |
+| `MODEL_PATH` | `models/acne-yolo-best.pt` | Repository-relative trained weights path |
+| `YOLO_DEVICE` | `cpu` | CPU-only inference on Render |
+| `ALLOWED_ORIGINS` | `https://wela-liff-prototype.vercel.app,http://localhost:3000,http://localhost:3001` | Comma-separated browser origins |
+| `LOG_LEVEL` | `INFO` | Privacy-safe application logging level |
+
+After Render assigns the service hostname, the public endpoints are:
+
+- Health: `https://<render-service-host>/health`
+- OpenAPI documentation: `https://<render-service-host>/docs`
+
+A healthy service returns `{"status":"ok","model_loaded":true}` from `/health`. A missing or unloadable model returns an unhealthy response and is never reported as loaded. Verify the checked-in model, CPU loading, import, and health endpoint without modifying model or dataset files:
+
+```bash
+python scripts/verify_render_deployment.py
+```
+
+Ultralytics declares PyTorch, Torchvision, NumPy, and `opencv-python` as transitive runtime dependencies. Therefore `requirements.txt` does not separately install `opencv-python-headless`, which would cause both OpenCV distributions to be installed. PyTorch and Ultralytics are comparatively large and may approach free-tier build-time, memory, or cold-start limits; CPU inference can also be slow.
+
+## Research and Medical Disclaimer
+
+This public service remains an academic feasibility prototype. It is not a medical device, does not diagnose acne or any health condition, must not guide treatment or clinical decisions, and makes no clinical-accuracy or production-readiness claim. It does not perform face recognition, identity matching, or identity inference.
