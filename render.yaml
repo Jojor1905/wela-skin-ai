@@ -2,6 +2,7 @@ services:
   - type: web
     name: wela-skin-ai-api
     runtime: python
+    branch: deploy/render-backend
     plan: free
     buildCommand: python -m pip install --upgrade pip && pip install -r requirements.txt
     startCommand: uvicorn src.api.app:app --host 0.0.0.0 --port $PORT
