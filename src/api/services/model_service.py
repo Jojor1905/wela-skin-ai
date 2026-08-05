@@ -76,7 +76,7 @@ class ModelService:
         with self._prediction_lock:
             results = self._model.predict(
                 source=image,
-                conf=min(0.001, self._confidence_threshold),
+                conf=self._confidence_threshold,
                 device=self._device,
                 verbose=False,
             )

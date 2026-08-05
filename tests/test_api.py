@@ -21,6 +21,7 @@ from src.api.services.model_service import InferenceResult, RawDetection
 class FakeModelService:
     def __init__(self) -> None:
         self.loaded = False
+        self.load_count = 0
         self.seen_paths: list[Path] = []
         self.seen_sizes: list[tuple[int, int]] = []
         self.seen_hashes: list[str] = []
@@ -30,6 +31,7 @@ class FakeModelService:
         return self.loaded
 
     def load(self) -> None:
+        self.load_count += 1
         self.loaded = True
 
     def predict(self, image: Image.Image) -> InferenceResult:
@@ -53,6 +55,12 @@ class MissingModelService(FakeModelService):
     def load(self) -> None:
         self.loaded = False
         raise FileNotFoundError("deliberately missing model")
+
+
+class NotReadyModelService(FakeModelService):
+    def load(self) -> None:
+        self.load_count += 1
+        self.loaded = False
 
 
 def image_bytes(
@@ -100,6 +108,17 @@ class LocalApiTests(unittest.TestCase):
         response = self.client.get("/health")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json(), {"status": "ok", "model_loaded": True})
+        self.assertEqual(self.fake_model.load_count, 1)
+
+    def test_model_is_loaded_once_for_multiple_predictions(self) -> None:
+        for name in ("first.png", "second.png"):
+            response = self.client.post(
+                "/predict",
+                data=self.form_data(),
+                files={"image": (name, image_bytes(), "image/png")},
+            )
+            self.assertEqual(response.status_code, 200, response.text)
+        self.assertEqual(self.fake_model.load_count, 1)
 
     def test_missing_model_is_not_reported_as_loaded(self) -> None:
         with self.assertLogs("uvicorn.error", level="ERROR"):
@@ -127,6 +146,7 @@ class LocalApiTests(unittest.TestCase):
                 "/predict",
                 data=self.form_data(),
                 files={"image": ("face.png", image_bytes(), "image/png")},
+                headers={"X-Request-ID": "frontend-test-request"},
             )
         body = response.json()
         self.assertEqual(response.status_code, 200, response.text)
@@ -147,10 +167,16 @@ class LocalApiTests(unittest.TestCase):
         self.assertTrue({"cleanser", "serum", "moisturiser", "sunscreen", "optional spot care"}.issubset(categories))
         self.assertTrue(self.fake_model.seen_hashes)
         self.assertEqual(response.headers["cache-control"], "no-store, max-age=0")
+        self.assertEqual(body["request_id"], "frontend-test-request")
+        self.assertEqual(response.headers["x-request-id"], "frontend-test-request")
         self.assertIn(body["request_id"], logs.output[-1])
         self.assertIn(body["input_sha256_prefix"], logs.output[-1])
         self.assertIn('"inference_executed": true', logs.output[-1])
         self.assertIn('"filtered_detection_count": 2', logs.output[-1])
+        for timing_key in ("decode_ms", "inference_ms", "postprocess_ms", "total_ms", "response_status"):
+            self.assertIn(f'"{timing_key}"', logs.output[-1])
+        self.assertNotIn("image/png", logs.output[-1])
+        self.assertNotIn("private-face", logs.output[-1])
 
     def test_comma_separated_concerns_are_accepted(self) -> None:
         response = self.client.post(
@@ -169,6 +195,16 @@ class LocalApiTests(unittest.TestCase):
         self.assertEqual(response.status_code, 200, response.text)
         self.assertEqual((response.json()["image_width"], response.json()["image_height"]), (80, 40))
         self.assertEqual(self.fake_model.seen_sizes[-1], (80, 40))
+
+    def test_large_upload_is_downscaled_in_memory_before_inference(self) -> None:
+        response = self.client.post(
+            "/predict",
+            data=self.form_data(),
+            files={"image": ("large.jpg", image_bytes("JPEG", (2400, 1800)), "image/jpeg")},
+        )
+        self.assertEqual(response.status_code, 200, response.text)
+        self.assertEqual(self.fake_model.seen_sizes[-1], (1280, 960))
+        self.assertEqual((response.json()["image_width"], response.json()["image_height"]), (1280, 960))
 
     def test_distinct_upload_bytes_reach_inference_as_distinct_decoded_images(self) -> None:
         first = image_bytes(color=(10, 20, 30))
@@ -202,8 +238,25 @@ class LocalApiTests(unittest.TestCase):
                 files={"image": ("face.png", image_bytes(), "image/png")},
             )
         self.assertEqual(response.status_code, 500)
-        self.assertEqual(response.json(), {"detail": "Local model inference failed."})
+        self.assertEqual(response.json()["detail"]["code"], "prediction_failed")
         self.assertNotIn("detections", response.json())
+
+    def test_prediction_returns_stable_503_when_model_is_not_ready(self) -> None:
+        model = NotReadyModelService()
+        settings = Settings(
+            model_path=Path("unused-by-fake.pt"),
+            allowed_origins=("http://localhost:3000",),
+        )
+        with TestClient(create_app(settings, model)) as client:
+            response = client.post(
+                "/predict",
+                data=self.form_data(),
+                files={"image": ("face.png", image_bytes(), "image/png")},
+                headers={"X-Request-ID": "not-ready-test"},
+            )
+        self.assertEqual(response.status_code, 503)
+        self.assertEqual(response.json()["detail"]["code"], "model_not_ready")
+        self.assertEqual(response.headers["x-request-id"], "not-ready-test")
 
     def test_prediction_does_not_create_a_permanent_upload_file(self) -> None:
         with patch.object(Path, "write_bytes", side_effect=AssertionError("upload must remain in memory")):
@@ -307,10 +360,12 @@ class LocalApiTests(unittest.TestCase):
             headers={
                 "Origin": "http://localhost:3000",
                 "Access-Control-Request-Method": "POST",
+                "Access-Control-Request-Headers": "X-Request-ID",
             },
         )
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.headers["access-control-allow-origin"], "http://localhost:3000")
+        self.assertIn("x-request-id", response.headers["access-control-allow-headers"].lower())
 
 
 class ConfigurationTests(unittest.TestCase):

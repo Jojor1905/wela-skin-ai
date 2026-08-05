@@ -2,12 +2,14 @@
 
 from __future__ import annotations
 
-import json
 import hashlib
+import json
 import logging
+import re
 from contextlib import asynccontextmanager
 from io import BytesIO
 from pathlib import Path
+from time import perf_counter
 from typing import AsyncIterator, Protocol
 from uuid import uuid4
 
@@ -31,7 +33,9 @@ from src.api.services.recommendation_service import build_recommendations
 
 ALLOWED_IMAGE_FORMATS = {"JPEG", "PNG", "WEBP"}
 ALLOWED_CONTENT_TYPES = {"image/jpeg", "image/png", "image/webp"}
+MAX_INFERENCE_DIMENSION = 1280
 LOGGER = logging.getLogger("uvicorn.error")
+REQUEST_ID_PATTERN = re.compile(r"^[A-Za-z0-9._-]{1,128}$")
 
 
 class InferenceService(Protocol):
@@ -50,9 +54,14 @@ def log_prediction_event(
     sha256_prefix: str,
     width: int,
     height: int,
+    decode_ms: float,
+    inference_ms: float,
+    postprocess_ms: float,
+    total_ms: float,
     inference_executed: bool,
     raw_detection_count: int,
     filtered_detection_count: int,
+    response_status: int,
 ) -> None:
     """Log non-reversible request provenance without retaining image content."""
     LOGGER.info(
@@ -64,13 +73,25 @@ def log_prediction_event(
                 "input_sha256_prefix": sha256_prefix,
                 "decoded_width": width,
                 "decoded_height": height,
+                "decode_ms": round(decode_ms, 3),
+                "inference_ms": round(inference_ms, 3),
+                "postprocess_ms": round(postprocess_ms, 3),
+                "total_ms": round(total_ms, 3),
                 "inference_executed": inference_executed,
                 "raw_detection_count": raw_detection_count,
                 "filtered_detection_count": filtered_detection_count,
+                "response_status": response_status,
             },
             sort_keys=True,
         ),
-    )
+)
+
+
+def request_id_from_header(value: str | None) -> str:
+    """Use a safe caller reference when supplied, otherwise create one."""
+    if value and REQUEST_ID_PATTERN.fullmatch(value):
+        return value
+    return uuid4().hex
 
 
 def parse_concerns(value: str) -> list[str]:
@@ -106,6 +127,10 @@ def decode_image(payload: bytes) -> tuple[Image.Image, int, int]:
             verification_image.verify()
         with Image.open(BytesIO(payload)) as source_image:
             oriented_image = ImageOps.exif_transpose(source_image)
+            oriented_image.thumbnail(
+                (MAX_INFERENCE_DIMENSION, MAX_INFERENCE_DIMENSION),
+                Image.Resampling.LANCZOS,
+            )
             oriented_image.load()
             decoded = oriented_image.convert("RGB")
     except ValueError:
@@ -151,8 +176,17 @@ def create_app(
         allow_origins=list(runtime_settings.allowed_origins),
         allow_credentials=False,
         allow_methods=["GET", "POST"],
-        allow_headers=["Content-Type"],
+        allow_headers=["Content-Type", "X-Request-ID"],
+        expose_headers=["X-Request-ID"],
     )
+
+    @application.middleware("http")
+    async def request_reference(request: Request, call_next):
+        request_id = request_id_from_header(request.headers.get("X-Request-ID"))
+        request.state.request_id = request_id
+        response = await call_next(request)
+        response.headers["X-Request-ID"] = request_id
+        return response
 
     @application.get("/health", response_model=HealthResponse)
     async def health(request: Request, response: Response) -> HealthResponse:
@@ -191,19 +225,66 @@ def create_app(
     ) -> PredictResponse:
         response.headers["Cache-Control"] = "no-store, max-age=0"
         response.headers["Pragma"] = "no-cache"
-        request_id = uuid4().hex
+        request_id = request.state.request_id
+        started_at = perf_counter()
+        byte_count = 0
+        sha256_prefix = ""
+        width = 0
+        height = 0
+        decode_ms = 0.0
+        inference_ms = 0.0
+        postprocess_ms = 0.0
+
+        def log_attempt(
+            *,
+            response_status: int,
+            inference_executed: bool = False,
+            raw_detection_count: int = 0,
+            filtered_detection_count: int = 0,
+        ) -> None:
+            log_prediction_event(
+                request_id=request_id,
+                byte_count=byte_count,
+                sha256_prefix=sha256_prefix,
+                width=width,
+                height=height,
+                decode_ms=decode_ms,
+                inference_ms=inference_ms,
+                postprocess_ms=postprocess_ms,
+                total_ms=(perf_counter() - started_at) * 1000,
+                inference_executed=inference_executed,
+                raw_detection_count=raw_detection_count,
+                filtered_detection_count=filtered_detection_count,
+                response_status=response_status,
+            )
+
+        service: InferenceService = request.app.state.model_service
+        if not service.is_loaded:
+            log_attempt(response_status=503)
+            raise HTTPException(
+                status_code=503,
+                detail={
+                    "code": "model_not_ready",
+                    "message": "The analysis model is not ready.",
+                },
+            )
         if image.content_type not in ALLOWED_CONTENT_TYPES:
             await image.close()
+            log_attempt(response_status=415)
             raise HTTPException(status_code=415, detail="Only JPEG, PNG, and WEBP image uploads are supported.")
         try:
             payload = await image.read(runtime_settings.maximum_upload_bytes + 1)
         finally:
             await image.close()
+        byte_count = len(payload)
         if not payload:
+            log_attempt(response_status=400)
             raise HTTPException(status_code=400, detail="The uploaded image is empty.")
         if len(payload) > runtime_settings.maximum_upload_bytes:
+            log_attempt(response_status=413)
             raise HTTPException(status_code=413, detail="The uploaded image exceeds the 10 MB limit.")
         input_sha256_prefix = hashlib.sha256(payload).hexdigest()[:12]
+        sha256_prefix = input_sha256_prefix
         try:
             parsed_concerns = parse_concerns(concerns)
             questionnaire = Questionnaire(
@@ -214,66 +295,85 @@ def create_app(
                 goal=goal.strip(),
             )
         except (ValueError, ValidationError) as error:
+            log_attempt(response_status=422)
             raise HTTPException(status_code=422, detail=str(error)) from error
 
+        decode_started_at = perf_counter()
         try:
             decoded_image, width, height = decode_image(payload)
         except ValueError as error:
+            decode_ms = (perf_counter() - decode_started_at) * 1000
+            log_attempt(response_status=400)
             raise HTTPException(status_code=400, detail=str(error)) from error
+        decode_ms = (perf_counter() - decode_started_at) * 1000
 
+        inference_started_at = perf_counter()
         try:
-            service: InferenceService = request.app.state.model_service
             inference = await run_in_threadpool(service.predict, decoded_image)
         except Exception as error:
-            log_prediction_event(
-                request_id=request_id,
-                byte_count=len(payload),
-                sha256_prefix=input_sha256_prefix,
-                width=width,
-                height=height,
-                inference_executed=False,
-                raw_detection_count=0,
-                filtered_detection_count=0,
-            )
-            raise HTTPException(status_code=500, detail="Local model inference failed.") from error
+            inference_ms = (perf_counter() - inference_started_at) * 1000
+            log_attempt(response_status=500)
+            raise HTTPException(
+                status_code=500,
+                detail={
+                    "code": "prediction_failed",
+                    "message": "Model inference failed.",
+                },
+            ) from error
         finally:
             decoded_image.close()
+        inference_ms = (perf_counter() - inference_started_at) * 1000
 
-        analysis = analyse_detections(inference.detections, width, height)
-        log_prediction_event(
-            request_id=request_id,
-            byte_count=len(payload),
-            sha256_prefix=input_sha256_prefix,
-            width=width,
-            height=height,
+        postprocess_started_at = perf_counter()
+        try:
+            analysis = analyse_detections(inference.detections, width, height)
+            recommendations = build_recommendations(
+                questionnaire,
+                detection_count=len(analysis.detections),
+                mean_confidence=analysis.mean_confidence,
+                dominant_region=analysis.dominant_region,
+            )
+            result = PredictResponse(
+                request_id=request_id,
+                input_sha256_prefix=input_sha256_prefix,
+                inference_executed=True,
+                raw_detection_count=inference.raw_detection_count,
+                post_threshold_detection_count=len(inference.detections),
+                image_width=width,
+                image_height=height,
+                total_detection_count=len(analysis.detections),
+                mean_detection_confidence=round(analysis.mean_confidence, 6),
+                detections=analysis.detections,
+                approximate_face_region_counts=analysis.region_counts,
+                dominant_region=analysis.dominant_region,
+                prototype_breakout_level=analysis.breakout_level,
+                prototype_skin_score=analysis.skin_score,
+                insights=analysis.insights,
+                product_recommendations=recommendations,
+            )
+        except Exception as error:
+            postprocess_ms = (perf_counter() - postprocess_started_at) * 1000
+            log_attempt(
+                response_status=500,
+                inference_executed=True,
+                raw_detection_count=inference.raw_detection_count,
+                filtered_detection_count=len(inference.detections),
+            )
+            raise HTTPException(
+                status_code=500,
+                detail={
+                    "code": "postprocess_failed",
+                    "message": "Prediction post-processing failed.",
+                },
+            ) from error
+        postprocess_ms = (perf_counter() - postprocess_started_at) * 1000
+        log_attempt(
+            response_status=200,
             inference_executed=True,
             raw_detection_count=inference.raw_detection_count,
             filtered_detection_count=len(inference.detections),
         )
-        recommendations = build_recommendations(
-            questionnaire,
-            detection_count=len(analysis.detections),
-            mean_confidence=analysis.mean_confidence,
-            dominant_region=analysis.dominant_region,
-        )
-        return PredictResponse(
-            request_id=request_id,
-            input_sha256_prefix=input_sha256_prefix,
-            inference_executed=True,
-            raw_detection_count=inference.raw_detection_count,
-            post_threshold_detection_count=len(inference.detections),
-            image_width=width,
-            image_height=height,
-            total_detection_count=len(analysis.detections),
-            mean_detection_confidence=round(analysis.mean_confidence, 6),
-            detections=analysis.detections,
-            approximate_face_region_counts=analysis.region_counts,
-            dominant_region=analysis.dominant_region,
-            prototype_breakout_level=analysis.breakout_level,
-            prototype_skin_score=analysis.skin_score,
-            insights=analysis.insights,
-            product_recommendations=recommendations,
-        )
+        return result
 
     return application
 
