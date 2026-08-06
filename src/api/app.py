@@ -168,12 +168,12 @@ def create_app(
             LOGGER.exception("Model startup load failed; health checks will report unavailable.")
         yield
 
-    application = FastAPI(
+    app = FastAPI(
         title="Wela Skin AI Prototype API",
         version="0.1.0",
         lifespan=lifespan,
     )
-    application.add_middleware(
+    app.add_middleware(
         CORSMiddleware,
         allow_origins=list(runtime_settings.allowed_origins),
         allow_credentials=False,
@@ -182,7 +182,7 @@ def create_app(
         expose_headers=["X-Request-ID"],
     )
 
-    @application.middleware("http")
+    @app.middleware("http")
     async def request_reference(request: Request, call_next):
         request_id = request_id_from_header(request.headers.get("X-Request-ID"))
         request.state.request_id = request_id
@@ -190,23 +190,26 @@ def create_app(
         response.headers["X-Request-ID"] = request_id
         return response
     
-    @application.post("/product",response_model=ProductResponse,tags=["products"],summary="ค้นหาผลิตภัณฑ์ตามสภาพและปัญหาผิว",)
-    async def get_products(payload: ProductQuery,) -> ProductResponse:
-        products = search_products(payload)
-
-        return ProductResponse(
-        count=len(products),
-        matched_condition_ids=payload.condition_ids,
-        items=products,
-        disclaimer=(
-            "คำแนะนำนี้จัดทำเพื่อการทดลองต้นแบบเชิงวิชาการ "
-            "ไม่ใช่การวินิจฉัยหรือคำแนะนำทางการแพทย์ "
-            "ควรทดสอบผลิตภัณฑ์บริเวณเล็ก ๆ ก่อนใช้งาน"
-        ),
+    @app.post(
+        "/product",
+        response_model=ProductResponse,
+        tags=["products"],
+        summary="ค้นหาผลิตภัณฑ์ตามสภาพและปัญหาผิว",
     )
+    async def get_products(payload: ProductQuery) -> ProductResponse:
+        products = search_products(payload)
+        return ProductResponse(
+            count=len(products),
+            matched_condition_ids=payload.condition_ids,
+            items=products,
+            disclaimer=(
+                "คำแนะนำนี้จัดทำเพื่อการทดลองต้นแบบเชิงวิชาการ "
+                "ไม่ใช่การวินิจฉัยหรือคำแนะนำทางการแพทย์ "
+                "ควรทดสอบผลิตภัณฑ์บริเวณเล็ก ๆ ก่อนใช้งาน"
+            ),
+        )
 
-
-    @application.get("/health", response_model=HealthResponse)
+    @app.get("/health", response_model=HealthResponse)
     async def health(request: Request, response: Response) -> HealthResponse:
         service: InferenceService = request.app.state.model_service
         if not service.is_loaded:
@@ -214,7 +217,7 @@ def create_app(
             return HealthResponse(status="unavailable", model_loaded=False)
         return HealthResponse(status="ok", model_loaded=True)
 
-    @application.get("/model-info", response_model=ModelInfoResponse)
+    @app.get("/model-info", response_model=ModelInfoResponse)
     async def model_info(request: Request) -> ModelInfoResponse:
         service: InferenceService = request.app.state.model_service
         return ModelInfoResponse(
@@ -230,7 +233,7 @@ def create_app(
             model_loaded=service.is_loaded,
         )
 
-    @application.post("/predict", response_model=PredictResponse)
+    @app.post("/predict", response_model=PredictResponse)
     async def predict(
         request: Request,
         response: Response,
@@ -393,7 +396,7 @@ def create_app(
         )
         return result
 
-    return application
+    return app
 
 
 app = create_app()

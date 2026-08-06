@@ -9,11 +9,7 @@ from typing import Any
 from ..schemas import ProductItem, ProductQuery
 
 
-DATA_PATH = (
-    Path(__file__).resolve().parents[1]
-    / "data"
-    / "wela_skin_rules_source.json"
-)
+DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "wela_skin_rules_source.json"
 
 
 @lru_cache(maxsize=1)
@@ -28,8 +24,14 @@ def load_product_rules() -> dict[str, Any]:
             "src/api/data/wela_skin_rules_source.json"
         )
 
-    with DATA_PATH.open("r", encoding="utf-8") as file:
-        data = json.load(file)
+    try:
+        with DATA_PATH.open("r", encoding="utf-8") as file:
+            data = json.load(file)
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError) as error:
+        raise RuntimeError(f"Product data file is not valid UTF-8 JSON: {DATA_PATH}") from error
+
+    if not isinstance(data, dict):
+        raise RuntimeError("Invalid product data: the JSON root must be an object")
 
     conditions = data.get("conditions")
 
@@ -42,11 +44,14 @@ def load_product_rules() -> dict[str, Any]:
 
 
 def create_product_id(name: str) -> str:
-    digest = hashlib.sha256(
-        name.strip().casefold().encode("utf-8")
-    ).hexdigest()[:12]
+    digest = hashlib.sha256(_normalize_product_name(name).encode("utf-8")).hexdigest()[:12]
 
     return f"product_{digest}"
+
+
+def _normalize_product_name(name: str) -> str:
+    """Normalize spacing and case for stable IDs and de-duplication."""
+    return " ".join(name.split()).casefold()
 
 
 def search_products(query: ProductQuery) -> list[ProductItem]:
@@ -135,7 +140,7 @@ def search_products(query: ProductQuery) -> list[ProductItem]:
                 if search_text and search_text not in searchable_text:
                     continue
 
-                dedupe_key = name.casefold()
+                dedupe_key = _normalize_product_name(name)
 
                 if dedupe_key not in records:
                     records[dedupe_key] = {
