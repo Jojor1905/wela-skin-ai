@@ -11,8 +11,8 @@ DEFAULT_MODEL_RELATIVE_PATH = Path("models/acne-yolo-best.pt")
 DEFAULT_YOLO_DEVICE = "cpu"
 DEFAULT_LOG_LEVEL = "INFO"
 DEFAULT_ALLOWED_ORIGINS = (
+    "https://wela-liff-prototype.vercel.app",
     "http://localhost:3000",
-    "http://localhost:3001",
     "http://127.0.0.1:3000",
 )
 
@@ -25,7 +25,13 @@ def repository_root() -> Path:
 def parse_allowed_origins(value: str | None) -> tuple[str, ...]:
     if value is None:
         return DEFAULT_ALLOWED_ORIGINS
-    origins = tuple(origin.strip().rstrip("/") for origin in value.split(",") if origin.strip())
+    origins = tuple(
+        dict.fromkeys(
+            origin.strip().rstrip("/")
+            for origin in value.split(",")
+            if origin.strip().rstrip("/")
+        )
+    )
     if not origins:
         raise ValueError("ALLOWED_ORIGINS must contain at least one comma-separated origin.")
     return origins

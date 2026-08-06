@@ -15,6 +15,6 @@ services:
       - key: YOLO_DEVICE
         value: cpu
       - key: ALLOWED_ORIGINS
-        value: https://wela-liff-prototype.vercel.app,http://localhost:3000,http://localhost:3001
+        value: https://wela-liff-prototype.vercel.app,http://localhost:3000,http://127.0.0.1:3000
       - key: LOG_LEVEL
         value: INFO

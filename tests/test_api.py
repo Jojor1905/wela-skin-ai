@@ -10,6 +10,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from fastapi.testclient import TestClient
+from httpx import Response
 from PIL import Image
 
 from src.api.app import create_app, decode_image
@@ -85,7 +86,7 @@ class LocalApiTests(unittest.TestCase):
         self.fake_model = FakeModelService()
         settings = Settings(
             model_path=Path("unused-by-fake.pt"),
-            allowed_origins=("http://localhost:3000",),
+            allowed_origins=DEFAULT_ALLOWED_ORIGINS,
             maximum_upload_bytes=10 * 1024 * 1024,
         )
         self.client_context = TestClient(create_app(settings, self.fake_model))
@@ -354,18 +355,40 @@ class LocalApiTests(unittest.TestCase):
         )
         self.assertEqual(response.status_code, 422)
 
-    def test_local_frontend_cors_preflight_is_allowed(self) -> None:
-        response = self.client.options(
+    def cors_preflight(self, origin: str) -> Response:
+        return self.client.options(
             "/predict",
             headers={
-                "Origin": "http://localhost:3000",
+                "Origin": origin,
                 "Access-Control-Request-Method": "POST",
-                "Access-Control-Request-Headers": "X-Request-ID",
+                "Access-Control-Request-Headers": "content-type,x-request-id",
             },
         )
-        self.assertEqual(response.status_code, 200)
+
+    def test_configured_frontend_origins_are_allowed_for_predict_preflight(self) -> None:
+        for origin in DEFAULT_ALLOWED_ORIGINS:
+            with self.subTest(origin=origin):
+                response = self.cors_preflight(origin)
+                self.assertEqual(response.status_code, 200, response.text)
+                self.assertEqual(response.headers["access-control-allow-origin"], origin)
+                self.assertIn("content-type", response.headers["access-control-allow-headers"].lower())
+                self.assertIn("x-request-id", response.headers["access-control-allow-headers"].lower())
+
+    def test_predict_error_response_retains_cors_headers(self) -> None:
+        response = self.client.post(
+            "/predict",
+            data=self.form_data(),
+            files={"image": ("face.gif", b"GIF89a", "image/gif")},
+            headers={"Origin": "http://localhost:3000", "X-Request-ID": "cors-error-test"},
+        )
+        self.assertEqual(response.status_code, 415)
         self.assertEqual(response.headers["access-control-allow-origin"], "http://localhost:3000")
-        self.assertIn("x-request-id", response.headers["access-control-allow-headers"].lower())
+        self.assertEqual(response.headers["x-request-id"], "cors-error-test")
+
+    def test_unlisted_origin_is_not_allowed(self) -> None:
+        response = self.cors_preflight("https://unlisted.example")
+        self.assertEqual(response.status_code, 400)
+        self.assertNotIn("access-control-allow-origin", response.headers)
 
 
 class ConfigurationTests(unittest.TestCase):
@@ -384,8 +407,22 @@ class ConfigurationTests(unittest.TestCase):
     def test_cors_origin_parsing(self) -> None:
         self.assertEqual(parse_allowed_origins(None), DEFAULT_ALLOWED_ORIGINS)
         self.assertEqual(
-            parse_allowed_origins(" https://wela-liff-prototype.vercel.app/, http://localhost:3001 "),
-            ("https://wela-liff-prototype.vercel.app", "http://localhost:3001"),
+            parse_allowed_origins(
+                " https://wela-liff-prototype.vercel.app/, http://localhost:3000/, ,"
+                "http://127.0.0.1:3000/, https://wela-preview-123.vercel.app/ "
+            ),
+            (
+                "https://wela-liff-prototype.vercel.app",
+                "http://localhost:3000",
+                "http://127.0.0.1:3000",
+                "https://wela-preview-123.vercel.app",
+            ),
+        )
+
+    def test_cors_origin_parsing_does_not_rewrite_protocol_or_localhost(self) -> None:
+        self.assertEqual(
+            parse_allowed_origins("http://localhost:3000,http://127.0.0.1:3000"),
+            ("http://localhost:3000", "http://127.0.0.1:3000"),
         )
 
 
