@@ -1,0 +1,1206 @@
+{
+  "schema_version": "1.0.0",
+  "language": "th",
+  "source_title": "วิเคราะห์สภาพผิว สินค้า ขั้นตอนการลงสกินแคร์",
+  "source_note": "ถอดโครงสร้างจากเอกสารผู้ใช้ 20 หน้า โดยคงชื่อหมวด ส่วนผสม ผลิตภัณฑ์ และลำดับ AM/PM ตามต้นฉบับ",
+  "important_scope": {
+    "vision_model": "ผลจากโมเดลภาพต้องใช้เฉพาะสิ่งที่โมเดลตรวจได้จริง เช่น acne_lesion และข้อมูลตำแหน่ง/ความมั่นใจที่ API ส่งกลับ",
+    "questionnaire": "สภาพผิวและความกังวลที่โมเดลไม่ได้ตรวจ ต้องอ้างอิงคำตอบผู้ใช้",
+    "rule_engine": "ใช้กฎแบบกำหนดแน่นอนเพื่อจับคู่ผลโมเดลและคำตอบกับข้อมูลใน knowledge base",
+    "not_medical_diagnosis": true
+  },
+  "conditions": [
+    {
+      "id": "oily_skin",
+      "name_th": "ผิวมัน",
+      "name_en": "Oily Skin",
+      "type": "skin_type",
+      "source_pages": [
+        1,
+        5,
+        16
+      ],
+      "characteristics": [
+        "มีคราบน้ำมันเงาวาวทั่วใบหน้า",
+        "รูขุมขนกว้างเห็นได้ชัด"
+      ],
+      "causes": [
+        "ต่อมไขมันผลิตซีบัมมากเกินไป"
+      ],
+      "goals": [
+        "ควบคุมความมันส่วนเกิน",
+        "ลดการอุดตัน",
+        "ช่วยให้รูขุมขนดูกระชับ",
+        "เลือกสูตรไม่อุดตัน"
+      ],
+      "recommended_ingredients": [
+        "Salicylic Acid (BHA)",
+        "Niacinamide",
+        "Zinc PCA",
+        "Clay"
+      ],
+      "recommended_product_types": {
+        "cleanser": [
+          "คลีนซิ่งเจลหรือโฟมสูตรคุมมัน"
+        ],
+        "moisturizer": [
+          "Gel Cream",
+          "Water Gel",
+          "โลชั่นบางเบาแบบ Oil-Free"
+        ]
+      },
+      "products": {
+        "serum": [
+          {
+            "name": "The Ordinary Niacinamide 10% + Zinc 1%",
+            "reason": "ลดความมันและซีบัมส่วนเกิน"
+          },
+          {
+            "name": "La Roche-Posay Effaclar Serum",
+            "reason": "ช่วยลดสิ่งอุดตันและควบคุมความมัน"
+          }
+        ],
+        "moisturizer": [
+          {
+            "name": "MizuMi Cica Soothing Moisturizer",
+            "reason": "เจลครีมเนื้อเบา ไม่เหนอะหนะ"
+          },
+          {
+            "name": "CeraVe Ultra-Light Moisturizing Gel",
+            "reason": "เจลเติมความชุ่มชื้นสูตร Oil-Free"
+          }
+        ]
+      },
+      "routine": {
+        "am": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "La Roche-Posay Effaclar Gel",
+            "reason": "ล้างและควบคุมความมัน"
+          },
+          {
+            "step": 2,
+            "type": "Serum",
+            "product": "The Ordinary Niacinamide 10% + Zinc 1%",
+            "reason": "ลดความมันส่วนเกิน"
+          },
+          {
+            "step": 3,
+            "type": "Moisturizer",
+            "product": "MizuMi Cica Soothing Gel",
+            "reason": "เติมความชุ่มชื้นเนื้อบางเบา"
+          },
+          {
+            "step": 4,
+            "type": "Sunscreen",
+            "product": "MizuMi UV Water Serum SPF50+",
+            "reason": "กันแดดสูตรน้ำ"
+          }
+        ],
+        "pm": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "La Roche-Posay Effaclar Gel",
+            "reason": "ล้างสิ่งสกปรกและคราบมัน"
+          },
+          {
+            "step": 2,
+            "type": "Serum",
+            "product": "The Ordinary Niacinamide 10% + Zinc 1%",
+            "reason": "คุมมันและดูแลรูขุมขน"
+          },
+          {
+            "step": 3,
+            "type": "Moisturizer",
+            "product": "MizuMi Cica Soothing Gel",
+            "reason": "ล็อกความชุ่มชื้นแบบ Oil-Free"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dry_skin",
+      "name_th": "ผิวแห้ง",
+      "name_en": "Dry Skin",
+      "type": "skin_type",
+      "source_pages": [
+        1,
+        6,
+        16
+      ],
+      "characteristics": [
+        "ผิวแห้งกร้าน",
+        "ลอกเป็นขุย",
+        "ผิวตึง",
+        "ไม่เงาและไม่มีคราบน้ำมัน"
+      ],
+      "causes": [
+        "ต่อมไขมันผลิตน้ำมันธรรมชาติน้อยกว่าปกติ",
+        "ขาดลิพิดในชั้นผิว"
+      ],
+      "goals": [
+        "เติมน้ำมันธรรมชาติให้ผิว",
+        "เคลือบปกป้องผิว",
+        "ลดการสูญเสียความชื้น"
+      ],
+      "recommended_ingredients": [
+        "Ceramides",
+        "Shea Butter",
+        "Squalane",
+        "Fatty Acids",
+        "Cholesterol"
+      ],
+      "recommended_product_types": {
+        "cleanser": [
+          "Cleansing Milk",
+          "ครีมล้างหน้าแบบไม่มีฟอง"
+        ],
+        "moisturizer": [
+          "Rich Cream",
+          "Moisture Balm"
+        ]
+      },
+      "products": {
+        "serum": [
+          {
+            "name": "Real Barrier Intense Moisture Serum",
+            "reason": "เติมลิพิดและสารบำรุงให้ผิวแห้ง"
+          },
+          {
+            "name": "L'Oreal Revitalift Hyaluronic Acid Serum",
+            "reason": "เติมความชุ่มชื้นเข้มข้น"
+          }
+        ],
+        "moisturizer": [
+          {
+            "name": "CeraVe Moisturizing Cream",
+            "reason": "ครีมเข้มข้นที่มี Ceramide 3 ชนิด"
+          },
+          {
+            "name": "Atopalm MLE Cream",
+            "reason": "เสริมเกราะป้องกันผิวสำหรับผิวแห้งมาก"
+          }
+        ]
+      },
+      "routine": {
+        "am": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "CeraVe Hydrating Cleanser",
+            "reason": "ทำความสะอาดโดยถนอมน้ำมันผิว"
+          },
+          {
+            "step": 2,
+            "type": "Serum",
+            "product": "Real Barrier Intense Moisture Serum",
+            "reason": "เติมสารอาหารและลิพิด"
+          },
+          {
+            "step": 3,
+            "type": "Moisturizer",
+            "product": "CeraVe Moisturizing Cream",
+            "reason": "ล็อกความชุ่มชื้น"
+          },
+          {
+            "step": 4,
+            "type": "Sunscreen",
+            "product": "Biore UV Aqua Rich Watery Essence",
+            "reason": "กันแดดเนื้อเอสเซนส์ชุ่มชื้น"
+          }
+        ],
+        "pm": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "CeraVe Hydrating Cleanser",
+            "reason": "ทำความสะอาดอย่างอ่อนโยน"
+          },
+          {
+            "step": 2,
+            "type": "Serum",
+            "product": "Real Barrier Intense Moisture Serum",
+            "reason": "สนับสนุนการฟื้นฟูเกราะผิว"
+          },
+          {
+            "step": 3,
+            "type": "Moisturizer",
+            "product": "CeraVe Moisturizing Cream",
+            "reason": "บำรุงผิวข้ามคืน"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dehydrated_skin",
+      "name_th": "ผิวขาดน้ำ",
+      "name_en": "Dehydrated Skin",
+      "type": "skin_condition",
+      "source_pages": [
+        1,
+        7,
+        16,
+        17
+      ],
+      "characteristics": [
+        "ผิวหน้ามันแต่ดูแห้งตึง",
+        "มีร่องริ้วรอยเล็ก ๆ",
+        "แต่งหน้าไม่ติด"
+      ],
+      "causes": [
+        "ผิวสูญเสียน้ำในชั้นผิว (TEWL)"
+      ],
+      "goals": [
+        "เติมน้ำเข้าสู่ชั้นผิว",
+        "ล็อกความชื้น"
+      ],
+      "recommended_ingredients": [
+        "Hyaluronic Acid",
+        "Glycerin",
+        "Panthenol (Vitamin B5)",
+        "Sodium PCA"
+      ],
+      "recommended_product_types": {
+        "serum": [
+          "เซรั่มไฮยาลูรอนเติมน้ำ"
+        ],
+        "toner_or_essence": [
+          "โทนเนอร์หรือน้ำตบเพิ่มความชุ่มชื้น"
+        ]
+      },
+      "products": {
+        "serum": [
+          {
+            "name": "Torriden Dive-In Low Molecule Hyaluronic Acid Serum",
+            "reason": "ไฮยาโมเลกุลเล็กสำหรับเติมน้ำ"
+          },
+          {
+            "name": "Vichy Mineral 89",
+            "reason": "พรีเซรั่มน้ำแร่เข้มข้น"
+          }
+        ],
+        "moisturizer": [
+          {
+            "name": "Laneige Water Bank Blue Hyaluronic Cream",
+            "reason": "เติมและล็อกความชุ่มชื้น"
+          },
+          {
+            "name": "Neutrogena Hydro Boost Water Gel",
+            "reason": "เจลช่วยล็อกน้ำให้ผิว"
+          }
+        ]
+      },
+      "routine": {
+        "am": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "CeraVe Hydrating Cleanser",
+            "reason": "ทำความสะอาดโดยไม่รบกวนความชื้น"
+          },
+          {
+            "step": 2,
+            "type": "Serum",
+            "product": "Torriden Dive-In Low Molecule Hyaluronic Acid Serum",
+            "reason": "เติมน้ำให้ผิว"
+          },
+          {
+            "step": 3,
+            "type": "Moisturizer",
+            "product": "Laneige Water Bank Blue Hyaluronic Cream",
+            "reason": "ล็อกน้ำให้ผิว"
+          },
+          {
+            "step": 4,
+            "type": "Sunscreen",
+            "product": "Anessa Perfect UV Sunscreen Skincare Gel",
+            "reason": "กันแดดเนื้อเจลพร้อมสารบำรุง"
+          }
+        ],
+        "pm": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "CeraVe Hydrating Cleanser",
+            "reason": "ขจัดสิ่งสกปรกโดยคงความชื้น"
+          },
+          {
+            "step": 2,
+            "type": "Serum",
+            "product": "Torriden Dive-In Low Molecule Hyaluronic Acid Serum",
+            "reason": "เติมน้ำเข้าชั้นผิว"
+          },
+          {
+            "step": 3,
+            "type": "Moisturizer",
+            "product": "Laneige Water Bank Blue Hyaluronic Cream",
+            "reason": "ฟื้นฟูผิวข้ามคืน"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sensitive_skin",
+      "name_th": "ผิวแพ้ง่าย / ระคายเคืองง่าย",
+      "name_en": "Sensitive Skin",
+      "type": "skin_condition",
+      "source_pages": [
+        2,
+        8,
+        17
+      ],
+      "characteristics": [
+        "มีรอยแดงหรือผื่นแดง",
+        "ผิวดูบาง",
+        "เห็นเส้นเลือดฝอยชัดเจน"
+      ],
+      "causes": [
+        "เกราะป้องกันผิวอ่อนแอ"
+      ],
+      "goals": [
+        "ปลอบประโลมผิว",
+        "ลดอาการแสบแดงหรือระคายเคือง",
+        "เสริมเกราะป้องกันผิว"
+      ],
+      "recommended_ingredients": [
+        "Centella Asiatica (CICA)",
+        "Allantoin",
+        "Oat Extract",
+        "Madecassoside"
+      ],
+      "recommended_product_types": {
+        "general": [
+          "Hypoallergenic",
+          "Fragrance-Free",
+          "Alcohol-Free"
+        ],
+        "moisturizer": [
+          "Soothing Gel",
+          "Soothing Cream"
+        ]
+      },
+      "products": {
+        "serum": [
+          {
+            "name": "SKIN1004 Madagascar Centella Ampoule",
+            "reason": "ใบบัวบกสำหรับปลอบประโลมผิว"
+          },
+          {
+            "name": "La Roche-Posay Toleriane Ultra Serum",
+            "reason": "เซรั่มสำหรับผิวแพ้ง่าย"
+          }
+        ],
+        "moisturizer": [
+          {
+            "name": "Physiogel AI Cream / Calming Relief Cream",
+            "reason": "ลดความแห้งแดงและระคายเคือง"
+          },
+          {
+            "name": "Avene Cicalfate+ Restorative Protective Cream",
+            "reason": "ฟื้นฟูผิวระคายเคือง"
+          }
+        ]
+      },
+      "routine": {
+        "am": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "Physiogel Daily Defence Gentle Facial Cleanser",
+            "reason": "สูตรอ่อนโยน"
+          },
+          {
+            "step": 2,
+            "type": "Serum",
+            "product": "SKIN1004 Madagascar Centella Ampoule",
+            "reason": "ปลอบประโลมและลดรอยแดง"
+          },
+          {
+            "step": 3,
+            "type": "Moisturizer",
+            "product": "Physiogel AI Calming Relief Cream",
+            "reason": "ลดการระคายเคืองและเสริมเกราะผิว"
+          },
+          {
+            "step": 4,
+            "type": "Sunscreen",
+            "product": "Canmake Mermaid Skin Gel UV",
+            "reason": "กันแดดสูตรอ่อนโยน"
+          }
+        ],
+        "pm": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "Physiogel Daily Defence Gentle Facial Cleanser",
+            "reason": "ทำความสะอาดอย่างเบามือ"
+          },
+          {
+            "step": 2,
+            "type": "Serum",
+            "product": "SKIN1004 Madagascar Centella Ampoule",
+            "reason": "ปลอบประโลมผิว"
+          },
+          {
+            "step": 3,
+            "type": "Moisturizer",
+            "product": "Physiogel AI Calming Relief Cream",
+            "reason": "ฟื้นฟูเกราะป้องกันผิว"
+          }
+        ]
+      }
+    },
+    {
+      "id": "comedones",
+      "name_th": "สิวอุดตัน",
+      "name_en": "Comedones",
+      "type": "skin_concern",
+      "source_pages": [
+        2,
+        9,
+        17
+      ],
+      "characteristics": [
+        "สิวหัวขาว",
+        "สิวหัวดำบริเวณจมูกหรือคาง"
+      ],
+      "causes": [
+        "เซลล์ผิวเก่าผสมกับน้ำมันส่วนเกินอุดตันรูขุมขน"
+      ],
+      "goals": [
+        "สลายสิ่งอุดตัน",
+        "ผลัดเซลล์ผิวอย่างอ่อนโยน"
+      ],
+      "recommended_ingredients": [
+        "Salicylic Acid (BHA)",
+        "LHA",
+        "Retinoids",
+        "Bakuchiol"
+      ],
+      "recommended_product_types": {
+        "exfoliator": [
+          "โทนเนอร์หรือเซรั่ม BHA"
+        ],
+        "cleanser": [
+          "Cleansing Oil",
+          "Cleansing Balm"
+        ]
+      },
+      "products": {
+        "serum": [
+          {
+            "name": "Paula's Choice 2% BHA Liquid Exfoliant",
+            "reason": "ช่วยลดสิ่งอุดตัน"
+          },
+          {
+            "name": "CeraVe Resurfacing Retinol Serum",
+            "reason": "เรตินอลผลัดเซลล์ผิว"
+          }
+        ],
+        "moisturizer": [
+          {
+            "name": "La Roche-Posay Effaclar Duo (+)",
+            "reason": "ดูแลสิวอุดตันและโอกาสเกิดซ้ำ"
+          },
+          {
+            "name": "Krave Beauty Oat So Simple Water Cream",
+            "reason": "มอยส์เจอไรเซอร์ส่วนผสมน้อย"
+          }
+        ]
+      },
+      "routine": {
+        "am": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "CeraVe SA Smoothing Cleanser",
+            "reason": "ช่วยทำความสะอาดสิ่งอุดตัน"
+          },
+          {
+            "step": 2,
+            "type": "Moisturizer",
+            "product": "Krave Beauty Oat So Simple Water Cream",
+            "reason": "เติมความชุ่มชื้น"
+          },
+          {
+            "step": 3,
+            "type": "Sunscreen",
+            "product": "MizuMi UV Water Serum SPF50+",
+            "reason": "กันแดดสูตรน้ำ"
+          }
+        ],
+        "pm": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "CeraVe SA Smoothing Cleanser",
+            "reason": "ทำความสะอาดคราบไขมัน"
+          },
+          {
+            "step": 2,
+            "type": "Exfoliating Serum",
+            "product": "Paula's Choice 2% BHA Liquid Exfoliant",
+            "reason": "ใช้ 2-3 วันต่อครั้งตามเอกสาร"
+          },
+          {
+            "step": 3,
+            "type": "Moisturizer",
+            "product": "Krave Beauty Oat So Simple Water Cream",
+            "reason": "ปลอบประโลมผิวหลังผลัดเซลล์"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inflammatory_acne",
+      "name_th": "สิวอักเสบ / สิวติดเชื้อ",
+      "name_en": "Inflammatory Acne",
+      "type": "skin_concern",
+      "source_pages": [
+        2,
+        10,
+        18
+      ],
+      "characteristics": [
+        "ตุ่มนูนแดง",
+        "ตุ่มหนอง",
+        "สิวหัวช้าง",
+        "ตุ่มที่จับแล้วเจ็บ"
+      ],
+      "causes": [
+        "การสะสมและเจริญเติบโตของ C. acnes ในรูขุมขนที่อุดตัน"
+      ],
+      "goals": [
+        "ลดการสะสมของแบคทีเรียสิว",
+        "ลดการอักเสบและตุ่มแดง"
+      ],
+      "recommended_ingredients": [
+        "Benzoyl Peroxide",
+        "Tea Tree Oil",
+        "Zinc PCA",
+        "Azelaic Acid"
+      ],
+      "recommended_product_types": {
+        "spot_treatment": [
+          "เจลแต้มสิวเฉพาะจุด"
+        ],
+        "cleanser": [
+          "เจลล้างหน้าสูตรลดการสะสมของแบคทีเรีย"
+        ]
+      },
+      "products": {
+        "serum": [
+          {
+            "name": "Some By Mi AHA-BHA-PHA 30 Days Miracle Serum",
+            "reason": "ดูแลสิวอักเสบและผลัดเซลล์ผิว"
+          },
+          {
+            "name": "Gravich Acno Centella Daily Serum",
+            "reason": "ดูแลการสะสมของแบคทีเรียสิว"
+          }
+        ],
+        "moisturizer_or_spot": [
+          {
+            "name": "Puricas Dragon's Blood Scar Gel",
+            "reason": "ช่วยให้สิวแห้งและดูแลรอย"
+          },
+          {
+            "name": "MizuMi Peptide Acne Gel",
+            "reason": "เจลแต้มสิวอักเสบ"
+          }
+        ]
+      },
+      "routine": {
+        "am": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "La Roche-Posay Effaclar Gel",
+            "reason": "ลดการสะสมของสิ่งสกปรก"
+          },
+          {
+            "step": 2,
+            "type": "Spot Treatment",
+            "product": "MizuMi Peptide Acne Gel",
+            "reason": "แต้มสิวเฉพาะจุด"
+          },
+          {
+            "step": 3,
+            "type": "Moisturizer",
+            "product": "MizuMi Cica Soothing Gel",
+            "reason": "ปลอบประโลมผิว"
+          },
+          {
+            "step": 4,
+            "type": "Sunscreen",
+            "product": "MizuMi UV Water Serum SPF50+",
+            "reason": "กันแดดสูตรอ่อนโยน"
+          }
+        ],
+        "pm": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "La Roche-Posay Effaclar Gel",
+            "reason": "ขจัดสิ่งสกปรกและมลภาวะ"
+          },
+          {
+            "step": 2,
+            "type": "Serum",
+            "product": "Some By Mi AHA-BHA-PHA 30 Days Miracle Serum",
+            "reason": "ดูแลสิวอักเสบ"
+          },
+          {
+            "step": 3,
+            "type": "Spot Treatment",
+            "product": "MizuMi Peptide Acne Gel",
+            "reason": "แต้มตุ่มสิวอักเสบ"
+          },
+          {
+            "step": 4,
+            "type": "Moisturizer",
+            "product": "MizuMi Cica Soothing Gel",
+            "reason": "ฟื้นฟูผิวข้ามคืน"
+          }
+        ]
+      }
+    },
+    {
+      "id": "post_acne_marks",
+      "name_th": "รอยดำ / รอยแดงจากสิว",
+      "name_en": "Post-Acne Marks",
+      "type": "skin_concern",
+      "source_pages": [
+        3,
+        11,
+        18
+      ],
+      "characteristics": [
+        "รอยสีน้ำตาลหรือดำ (PIH)",
+        "รอยสีแดงหรือชมพู (PIE) หลังสิวหาย"
+      ],
+      "causes": [
+        "เมลานินทำงานมากขึ้นหลังการอักเสบ",
+        "เส้นเลือดฝอยขยายตัว"
+      ],
+      "goals": [
+        "ลดรอยดำ",
+        "ลดรอยแดง",
+        "ปรับสีผิวให้สม่ำเสมอ"
+      ],
+      "recommended_ingredients": {
+        "dark_marks": [
+          "Alpha Arbutin",
+          "Vitamin C",
+          "Tranexamic Acid",
+          "Niacinamide"
+        ],
+        "red_marks": [
+          "Centella Asiatica",
+          "Azelaic Acid",
+          "Niacinamide"
+        ]
+      },
+      "recommended_product_types": {
+        "serum": [
+          "เซรั่มลดรอยสิว",
+          "เซรั่มบำรุงผิวกระจ่างใส"
+        ],
+        "sunscreen": [
+          "กันแดดเพื่อป้องกันรอยเข้มขึ้น"
+        ]
+      },
+      "products": {
+        "serum": [
+          {
+            "name": "The Ordinary Alpha Arbutin 2% + HA",
+            "reason": "ดูแลรอยดำ"
+          },
+          {
+            "name": "MizuMi B3 Acne Concentrate Serum",
+            "reason": "ดูแลรอยแดงและรอยดำ"
+          }
+        ],
+        "moisturizer": [
+          {
+            "name": "Smooth E Cream",
+            "reason": "ดูแลรอยแผลเป็นและรอยดำสิว"
+          },
+          {
+            "name": "La Roche-Posay Cicaplast Baume B5+",
+            "reason": "สมานผิวและดูแลรอยแดง"
+          }
+        ]
+      },
+      "routine": {
+        "am": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "MizuMi Gentle Acne Wash",
+            "reason": "ทำความสะอาดอย่างอ่อนโยน"
+          },
+          {
+            "step": 2,
+            "type": "Serum",
+            "product": "MizuMi B3 Acne Concentrate Serum",
+            "reason": "ดูแลรอยแดงและรอยดำ"
+          },
+          {
+            "step": 3,
+            "type": "Moisturizer",
+            "product": "La Roche-Posay Cicaplast Baume B5+",
+            "reason": "สมานผิว"
+          },
+          {
+            "step": 4,
+            "type": "Sunscreen",
+            "product": "L'Oreal UV Defender Invisible Fluid",
+            "reason": "ป้องกันรอยดำเข้มขึ้น"
+          }
+        ],
+        "pm": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "MizuMi Gentle Acne Wash",
+            "reason": "ทำความสะอาดอย่างอ่อนโยน"
+          },
+          {
+            "step": 2,
+            "type": "Serum",
+            "product": "The Ordinary Alpha Arbutin 2% + HA",
+            "reason": "ดูแลเม็ดสีรอยดำ"
+          },
+          {
+            "step": 3,
+            "type": "Moisturizer",
+            "product": "La Roche-Posay Cicaplast Baume B5+",
+            "reason": "ฟื้นฟูผิวข้ามคืน"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pigmentation_dark_spots",
+      "name_th": "ฝ้า กระ และจุดด่างดำจากแดด",
+      "name_en": "Pigmentation & Dark Spots",
+      "type": "skin_concern",
+      "source_pages": [
+        3,
+        12,
+        18,
+        19
+      ],
+      "characteristics": [
+        "ปานสีน้ำตาลเป็นแผ่น",
+        "จุดสีน้ำตาลเล็ก ๆ กระจัดกระจาย"
+      ],
+      "causes": [
+        "แสงแดดและฮอร์โมนกระตุ้นการสร้างเม็ดสี"
+      ],
+      "goals": [
+        "ลดการสร้างและการส่งผ่านเม็ดสี",
+        "ป้องกันจุดด่างดำเข้มขึ้น"
+      ],
+      "recommended_ingredients": [
+        "Tranexamic Acid",
+        "Kojic Acid",
+        "Alpha Arbutin",
+        "Licorice Root Extract"
+      ],
+      "recommended_product_types": {
+        "dark_spot_corrector": [
+          "เซรั่มหรือครีมดูแลจุดด่างดำเฉพาะจุด"
+        ],
+        "sunscreen": [
+          "Broad-Spectrum SPF50+ PA++++"
+        ]
+      },
+      "products": {
+        "serum": [
+          {
+            "name": "Eucerin Spotless Brightening Booster Serum",
+            "reason": "ดูแลฝ้า กระ และจุดด่างดำ"
+          },
+          {
+            "name": "Kiehl’s Clearly Corrective Dark Spot Solution",
+            "reason": "ดูแลจุดด่างดำและความกระจ่างใส"
+          }
+        ],
+        "moisturizer": [
+          {
+            "name": "Eucerin Spotless Brightening Day/Night Fluid",
+            "reason": "ดูแลฝ้า กระ และจุดด่างดำ"
+          },
+          {
+            "name": "Melamii Anti-Melasma Spot Cream",
+            "reason": "ครีมทาฝ้าเฉพาะจุด"
+          }
+        ]
+      },
+      "routine": {
+        "am": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "Eucerin Spotless Brightening Cleansing Foam",
+            "reason": "ทำความสะอาดผิว"
+          },
+          {
+            "step": 2,
+            "type": "Serum",
+            "product": "Eucerin Spotless Brightening Booster Serum",
+            "reason": "ดูแลการสร้างเม็ดสี"
+          },
+          {
+            "step": 3,
+            "type": "Sunscreen",
+            "product": "Eucerin Sun Serum Spotless Brightening SPF50+",
+            "reason": "ป้องกันฝ้ากระเข้มขึ้น"
+          }
+        ],
+        "pm": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "Eucerin Spotless Brightening Cleansing Foam",
+            "reason": "ทำความสะอาดผิว"
+          },
+          {
+            "step": 2,
+            "type": "Serum",
+            "product": "Eucerin Spotless Brightening Booster Serum",
+            "reason": "ดูแลเม็ดสี"
+          },
+          {
+            "step": 3,
+            "type": "Moisturizer",
+            "product": "Eucerin Spotless Brightening Night Fluid",
+            "reason": "บำรุงผิวกลางคืน"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dull_skin",
+      "name_th": "ผิวหมองคล้ำ ไม่สดใส",
+      "name_en": "Dull Skin",
+      "type": "skin_concern",
+      "source_pages": [
+        3,
+        13,
+        19
+      ],
+      "characteristics": [
+        "สีผิวดูซีดโทรม",
+        "ผิวดูไม่เรียบเนียนและสะท้อนแสงน้อย"
+      ],
+      "causes": [
+        "เซลล์ผิวเก่าสะสม",
+        "อนุมูลอิสระและมลภาวะ"
+      ],
+      "goals": [
+        "ผลัดเซลล์ผิวชั้นนอก",
+        "ต้านอนุมูลอิสระ",
+        "เพิ่มความกระจ่างใส"
+      ],
+      "recommended_ingredients": [
+        "AHA (Glycolic Acid, Lactic Acid)",
+        "Vitamin C",
+        "Ferulic Acid"
+      ],
+      "recommended_product_types": {
+        "exfoliating_toner": [
+          "ใช้ 2-3 ครั้งต่อสัปดาห์ตามเอกสาร"
+        ],
+        "antioxidant_serum": [
+          "เซรั่มวิตามินซีตอนเช้า"
+        ]
+      },
+      "products": {
+        "serum": [
+          {
+            "name": "CeraVe Skin Renewing Vitamin C Serum",
+            "reason": "เพิ่มความกระจ่างใส"
+          },
+          {
+            "name": "Sunday Riley Good Genes Glycolic Acid Treatment",
+            "reason": "AHA ผลัดเซลล์ผิว"
+          }
+        ],
+        "moisturizer": [
+          {
+            "name": "Olay Regenerist Luminous Tone Perfecting Cream",
+            "reason": "ดูแลผิวหมองคล้ำ"
+          },
+          {
+            "name": "Garnier Bright Complete Vitamin C Serum Cream",
+            "reason": "ครีมบำรุงผิวกระจ่างใส"
+          }
+        ]
+      },
+      "routine": {
+        "am": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "Garnier Bright Complete Vitamin C Foam",
+            "reason": "ทำความสะอาดผิวหมองคล้ำ"
+          },
+          {
+            "step": 2,
+            "type": "Serum",
+            "product": "CeraVe Skin Renewing Vitamin C Serum",
+            "reason": "ต้านอนุมูลอิสระและเพิ่มความสว่าง"
+          },
+          {
+            "step": 3,
+            "type": "Moisturizer",
+            "product": "Olay Regenerist Luminous Tone Perfecting Cream",
+            "reason": "เพิ่มความกระจ่างใส"
+          },
+          {
+            "step": 4,
+            "type": "Sunscreen",
+            "product": "Garnier Super UV Invisible Serum Sunscreen",
+            "reason": "ปกป้องผิวจากแดด"
+          }
+        ],
+        "pm": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "Garnier Bright Complete Vitamin C Foam",
+            "reason": "ล้างมลภาวะ"
+          },
+          {
+            "step": 2,
+            "type": "Exfoliating Serum",
+            "product": "Sunday Riley Good Genes Glycolic Acid",
+            "reason": "ใช้ 2-3 วันต่อครั้งตามเอกสาร"
+          },
+          {
+            "step": 3,
+            "type": "Moisturizer",
+            "product": "Olay Regenerist Luminous Tone Perfecting Cream",
+            "reason": "บำรุงผิวกลางคืน"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fine_lines_wrinkles",
+      "name_th": "ริ้วรอยตื้นและริ้วรอยลึก",
+      "name_en": "Fine Lines & Wrinkles",
+      "type": "skin_concern",
+      "source_pages": [
+        4,
+        14,
+        19
+      ],
+      "characteristics": [
+        "เส้นริ้วตื้นบริเวณใต้ตา",
+        "ร่องลึกบริเวณหน้าผาก หางตา และร่องแก้ม"
+      ],
+      "causes": [
+        "คอลลาเจนและอีลาสตินลดลง",
+        "แสงแดด",
+        "ผิวขาดความชื้น"
+      ],
+      "goals": [
+        "สนับสนุนการสร้างคอลลาเจน",
+        "ดูแลร่องริ้วรอย",
+        "เพิ่มความยืดหยุ่น"
+      ],
+      "recommended_ingredients": [
+        "Retinol / Retinoids",
+        "Peptides",
+        "Adenosine"
+      ],
+      "recommended_product_types": {
+        "anti_aging_serum": [
+          "เซรั่มเรตินอลหรือเปปไทด์ใช้กลางคืน"
+        ],
+        "eye_cream": [
+          "ครีมบำรุงรอบดวงตา"
+        ]
+      },
+      "products": {
+        "serum": [
+          {
+            "name": "Kiehl’s Retinol Skin-Renewing Daily Micro-Dose Serum",
+            "reason": "เรตินอลสูตรอ่อนโยน"
+          },
+          {
+            "name": "Estée Lauder Advanced Night Repair (ANR)",
+            "reason": "ฟื้นฟูผิวยามค่ำคืน"
+          }
+        ],
+        "moisturizer": [
+          {
+            "name": "Olay Regenerist Micro-Sculpting Cream",
+            "reason": "ดูแลริ้วรอยและความยืดหยุ่น"
+          },
+          {
+            "name": "L'Oreal Revitalift Triple Power Anti-Aging Cream",
+            "reason": "ดูแลความกระชับและริ้วรอย"
+          }
+        ]
+      },
+      "routine": {
+        "am": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "L'Oreal Revitalift Hyaluronic Acid Foam",
+            "reason": "ทำความสะอาดอย่างชุ่มชื้น"
+          },
+          {
+            "step": 2,
+            "type": "Serum",
+            "product": "L'Oreal Revitalift Hyaluronic Acid Serum",
+            "reason": "เติมความชุ่มชื้นให้ริ้วรอยตื้น"
+          },
+          {
+            "step": 3,
+            "type": "Moisturizer",
+            "product": "Olay Regenerist Micro-Sculpting Cream",
+            "reason": "ดูแลความยืดหยุ่น"
+          },
+          {
+            "step": 4,
+            "type": "Sunscreen",
+            "product": "Anessa Perfect UV Sunscreen Skincare Gel",
+            "reason": "ปกป้องผิวจาก UVA"
+          }
+        ],
+        "pm": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "L'Oreal Revitalift Hyaluronic Acid Foam",
+            "reason": "ทำความสะอาดอ่อนโยน"
+          },
+          {
+            "step": 2,
+            "type": "Anti-Aging Serum",
+            "product": "Kiehl's Retinol Skin-Renewing Daily Micro-Dose Serum",
+            "reason": "ดูแลริ้วรอย"
+          },
+          {
+            "step": 3,
+            "type": "Moisturizer",
+            "product": "Olay Regenerist Micro-Sculpting Cream",
+            "reason": "เติมความชุ่มชื้น"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sagging_skin",
+      "name_th": "ผิวหย่อนคล้อย ไม่กระชับ",
+      "name_en": "Sagging Skin",
+      "type": "skin_concern",
+      "source_pages": [
+        4,
+        15,
+        20
+      ],
+      "characteristics": [
+        "กรอบหน้าไม่ชัด",
+        "แก้มหรือใต้คางดูตกหรือคล้อย"
+      ],
+      "causes": [
+        "สูญเสียโครงสร้างชั้นไขมัน คอลลาเจน และความยืดหยุ่นตามอายุ"
+      ],
+      "goals": [
+        "ดูแลความกระชับ",
+        "เสริมความแข็งแรงของโครงสร้างผิว"
+      ],
+      "recommended_ingredients": [
+        "Peptides",
+        "Coenzyme Q10",
+        "EGF"
+      ],
+      "recommended_product_types": {
+        "firming": [
+          "Firming Cream",
+          "Lifting Serum"
+        ]
+      },
+      "products": {
+        "serum": [
+          {
+            "name": "Clarins Double Serum",
+            "reason": "ดูแลโครงสร้างผิวและความกระชับ"
+          },
+          {
+            "name": "The Ordinary Multi-Peptide + HA Serum (Buffet)",
+            "reason": "เปปไทด์รวมเพื่อผิวแน่นฟู"
+          }
+        ],
+        "moisturizer": [
+          {
+            "name": "Shiseido Vital Perfection Uplifting and Firming Cream",
+            "reason": "ครีมดูแลกรอบหน้า"
+          },
+          {
+            "name": "Sulwhasoo Concentrated Ginseng Renewing Cream",
+            "reason": "ดูแลความแน่นกระชับ"
+          }
+        ]
+      },
+      "routine": {
+        "am": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "Sulwhasoo Gentle Cleansing Foam",
+            "reason": "ทำความสะอาดอย่างอ่อนโยน"
+          },
+          {
+            "step": 2,
+            "type": "Serum",
+            "product": "The Ordinary Multi-Peptide + HA Serum",
+            "reason": "เปปไทด์ดูแลความแน่นฟู"
+          },
+          {
+            "step": 3,
+            "type": "Moisturizer",
+            "product": "Shiseido Vital Perfection Uplifting and Firming Cream",
+            "reason": "ดูแลความกระชับ"
+          },
+          {
+            "step": 4,
+            "type": "Sunscreen",
+            "product": "Shiseido Urban Environment Triple Beauty Suncare",
+            "reason": "ปกป้องโครงสร้างผิว"
+          }
+        ],
+        "pm": [
+          {
+            "step": 1,
+            "type": "Cleanser",
+            "product": "Sulwhasoo Gentle Cleansing Foam",
+            "reason": "ทำความสะอาดอย่างอ่อนโยน"
+          },
+          {
+            "step": 2,
+            "type": "Serum",
+            "product": "Clarins Double Serum",
+            "reason": "ฟื้นฟูโครงสร้างผิวยามค่ำคืน"
+          },
+          {
+            "step": 3,
+            "type": "Moisturizer",
+            "product": "Shiseido Vital Perfection Uplifting and Firming Cream",
+            "reason": "ดูแลความกระชับกรอบหน้า"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -80,3 +80,30 @@ class PredictResponse(BaseModel):
     insights: list[str]
     product_recommendations: list[ProductRecommendation]
     disclaimer: str = DISCLAIMER
+
+
+class ProductQuery(BaseModel):
+    """เงื่อนไขค้นหาผลิตภัณฑ์จาก Rule-Based Catalog."""
+
+    condition_ids: list[str] = Field(default_factory=list)
+    categories: list[str] = Field(default_factory=list)
+    search: str | None = None
+    limit: int = Field(default=12, ge=1, le=50)
+
+
+class ProductItem(BaseModel):
+    id: str
+    name: str
+    category: str
+    reason: str
+    condition_ids: list[str]
+    condition_names_th: list[str]
+    source_pages: list[int]
+    image_url: str | None = None
+
+
+class ProductResponse(BaseModel):
+    count: int
+    matched_condition_ids: list[str]
+    items: list[ProductItem]
+    disclaimer: str

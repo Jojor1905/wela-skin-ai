@@ -30,6 +30,8 @@ from src.api.services.analysis_service import analyse_detections
 from src.api.services.model_service import InferenceResult, ModelService
 from src.api.services.recommendation_service import build_recommendations
 
+from .schemas import ProductQuery, ProductResponse
+from .services.product_service import search_products
 
 ALLOWED_IMAGE_FORMATS = {"JPEG", "PNG", "WEBP"}
 ALLOWED_CONTENT_TYPES = {"image/jpeg", "image/png", "image/webp"}
@@ -187,6 +189,22 @@ def create_app(
         response = await call_next(request)
         response.headers["X-Request-ID"] = request_id
         return response
+    
+    @application.post("/product",response_model=ProductResponse,tags=["products"],summary="ค้นหาผลิตภัณฑ์ตามสภาพและปัญหาผิว",)
+    async def get_products(payload: ProductQuery,) -> ProductResponse:
+        products = search_products(payload)
+
+        return ProductResponse(
+        count=len(products),
+        matched_condition_ids=payload.condition_ids,
+        items=products,
+        disclaimer=(
+            "คำแนะนำนี้จัดทำเพื่อการทดลองต้นแบบเชิงวิชาการ "
+            "ไม่ใช่การวินิจฉัยหรือคำแนะนำทางการแพทย์ "
+            "ควรทดสอบผลิตภัณฑ์บริเวณเล็ก ๆ ก่อนใช้งาน"
+        ),
+    )
+
 
     @application.get("/health", response_model=HealthResponse)
     async def health(request: Request, response: Response) -> HealthResponse:
